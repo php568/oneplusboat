@@ -22,7 +22,7 @@
 /* @import "theme-B.css"; */
 body {
     background-color: #FFFFFF;
-    background-image: url('http://www.racingdinghies.co.uk/sites/default/files/470EurosD5_mt225-dinghies.jpg');
+    /*background-image: url('http://118.25.5.174:8001/sites/default/files/470EurosD5_mt225-dinghies.jpg');*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
@@ -30,8 +30,8 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://www.racingdinghies.co.uk/sites/default/files/470EurosD5_mt225-dinghies.jpg',sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.racingdinghies.co.uk/sites/default/files/470EurosD5_mt225-dinghies.jpg',sizingMethod='scale')";
+    /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://118.25.5.174:8001/sites/default/files/470EurosD5_mt225-dinghies.jpg',sizingMethod='scale');*/
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://118.25.5.174:8001/sites/default/files/470EurosD5_mt225-dinghies.jpg',sizingMethod='scale')";*/
 }
 
 table {
@@ -183,24 +183,6 @@ padding:2px 18px;
  .view-display-id-block_13 .view-content {
 
  }
-
-  .tb-megamenu-nav li.level-1:nth-child(5) a.dropdown-toggle {
-  	  background-color: #1c1c1c;
- }
-
-.tb-megamenu-nav li.level-1:nth-child(5) a.dropdown-toggle:hover,
-.tb-megamenu-nav li.level-1:nth-child(5) a.dropdown-toggle:focus,
-.tb-megamenu-nav li.level-1.open:nth-child(5) a.dropdown-toggle,
-.tb-megamenu-nav li.level-1:nth-child(5) a.dropdown-toggle {
-	background-color: #1c1c1c !important;
-	color: #ec008c !important;
-}
-
-.tb-megamenu-nav li.level-1.open:nth-child(5) .view a,
-.tb-megamenu .dropdown-menu .active > a {
-	background:none !important;
-}
- 
 
   .tb-megamenu-nav li:nth-child(1) .tb-megamenu-column {
   margin-left:0;
