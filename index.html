@@ -275,6 +275,18 @@
         }
         .views-field-uc-product-image{line-height: normal;}
         .tb-megamenu .dropdown-menu a { white-space: nowrap; }
+        #block-views-table-block ul{margin:0;padding:0;list-style:none;}
+        #block-views-table-block .table{display:table;border-collapse:collapse;border:1px solid #ccc;}
+        #block-views-table-block .table-caption{display:table-caption;margin:0;padding:0;font-size:16px;}
+        #block-views-table-block .table-column-group{display:table-column-group;}
+        #block-views-table-block .table-column{display:table-column;width:100px;}
+        #block-views-table-block .table-row-group{display:table-row-group;}
+        #block-views-table-block .table-row{display:table-row;}
+        #block-views-table-block .table-row-group .table-row:hover,.table-footer-group .table-row:hover{background:#f6f6f6;}
+        #block-views-table-block .table-cell{display:table-cell;padding:0 5px;border:1px solid #ccc;}
+        #block-views-table-block .table-header-group{display:table-header-group;background:#eee;font-weight:bold;}
+        #block-views-table-block .table-footer-group{display:table-footer-group;}
+        
     </style>
 </head>
 <body class="html front not-logged-in one-sidebar sidebar-second page-homepage page-views">
@@ -1484,7 +1496,7 @@
                     </form>
                 </div>
                 -->
-                <div id="block-views-blog-posts-block" class="block block-views last even">
+                <div id="block-views-blog-posts-block" class="block block-views even">
 
                     <h2 class="block__title block-title">Racing blog...</h2>
 
@@ -1509,6 +1521,57 @@
                         </div>
 
 
+                    </div>
+                </div>
+
+                <div id="block-views-table-block" class="block block-views last even">
+                    <div class="table">
+                        <div class="table-column-group">
+                            <div class="table-column"></div>
+                            <div class="table-column"></div>
+                        </div>
+                        <div class="table-header-group">
+                            <ul class="table-row">
+                                <li class="table-cell">序号</li>
+                                <li class="table-cell">年龄</li>
+                            </ul>
+                        </div>
+                        <div class="table-footer-group">
+                            <ul class="table-row">
+                                <li class="table-cell">footer</li>
+                                <li class="table-cell">footer</li>
+                            </ul>
+                        </div>
+                        <div class="table-row-group">
+                            <ul class="table-row">
+                                <li class="table-cell">SPEC</li>
+                                <li class="table-cell">OnePlus PE OPTI</li>
+                            </ul>
+                            <ul class="table-row">
+                                <li class="table-cell">Length</li>
+                                <li class="table-cell">2.30m</li>
+                            </ul>
+                            <ul class="table-row">
+                                <li class="table-cell">Beam</li>
+                                <li class="table-cell">1.21m</li>
+                            </ul>
+                            <ul class="table-row">
+                                <li class="table-cell">Hull Weight</li>
+                                <li class="table-cell">39kg</li>
+                            </ul>
+                            <ul class="table-row">
+                                <li class="table-cell">Sail Area</li>
+                                <li class="table-cell">3.3㎡</li>
+                            </ul>
+                            <ul class="table-row">
+                                <li class="table-cell">Material</li>
+                                <li class="table-cell">Tri-laminate Polyethylene</li>
+                            </ul>
+                            <ul class="table-row">
+                                <li class="table-cell">Crew</li>
+                                <li class="table-cell">1-2</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
