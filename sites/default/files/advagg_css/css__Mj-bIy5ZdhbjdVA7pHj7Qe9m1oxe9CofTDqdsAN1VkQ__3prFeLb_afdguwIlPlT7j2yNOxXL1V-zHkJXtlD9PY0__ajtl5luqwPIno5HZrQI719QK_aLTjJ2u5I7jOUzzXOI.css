@@ -1,6 +1,8 @@
 body{
-    font-family:'HelveticaNeueW01-55Roma'
+    /*font-family:'HelveticaNeueW01-55Roma'*/
+    font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
 }
 h1,h2,h3,h4,h5,h6,.node-add-to-cart,.views-field-title,.view-homepage p,strong,.field .field-label,.product-info-label,.node .display-price .uc-price,label,.order-review-table .pane-title-row,.order-review-table .title-col{
-    font-family:'HelveticaNeueW01-65Medi'
+    /*font-family:'HelveticaNeueW01-65Medi'*/
+    font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
 }
