@@ -15,14 +15,16 @@ audio:not([controls]){
 }
 html{
     color:#fff;
-    font-family:Verdana,Tahoma,"DejaVu Sans",sans-serif;
+    /*font-family:Verdana,Tahoma,"DejaVu Sans",sans-serif;*/
+    font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
     font-size:87.5%;
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
     line-height:1.5em
 }
 button,input,select,textarea{
-    font-family:Verdana,Tahoma,"DejaVu Sans",sans-serif
+    /*font-family:Verdana,Tahoma,"DejaVu Sans",sans-serif*/
+    font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
 }
 body{
     margin:0;
