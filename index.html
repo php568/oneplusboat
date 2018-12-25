@@ -298,7 +298,7 @@
         .video-js.vjs-playing .vjs-tech {pointer-events: auto;}
         .video-js .vjs-time-control{display:block;}
         .video-js .vjs-remaining-time{display: none;}
-        #index-video{width: 100%;min-height: 350px;}
+        #index-video{width: 100%;min-height: 389px;}
     </style>
 </head>
 <body class="html front not-logged-in one-sidebar sidebar-second page-homepage page-views">
@@ -553,7 +553,7 @@
                                 <div class="field-content">
                                     <video id="index-video" class="video-js vjs-big-play-centered" controls preload="auto" width="100%"
                                            poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
-                                        <source src="sites/default/files/video/index-1.mp4" type='video/mp4'>
+                                        <!--<source src="sites/default/files/video/index-1.mp4" type='video/mp4'>-->
                                         <p class="vjs-no-js">
                                             To view this video please enable JavaScript, and consider upgrading to a web browser that
                                             <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
@@ -567,7 +567,6 @@
                     </div>
                     <div id="block-views-homepage-products-block" class="block block-views even">
                         <div class="view view-homepage-products view-id-homepage_products view-display-id-block view-dom-id-9b7599185229c8a2c2150ea8abbca8ed">
-
 
                             <div class="view-content">
                                 <div class="views-responsive-grid views-responsive-grid-horizontal views-columns-3">
@@ -636,7 +635,6 @@
                                     </div>
                                 </div>
                             </div>
-
 
                         </div>
                     </div>
@@ -789,6 +787,11 @@
 <script src="https://vjs.zencdn.net/7.3.0/video.js"></script>
 <script>window.HELP_IMPROVE_VIDEOJS = false;</script>
 <script>
+    var video_list = [
+        {title:"视频1", isplay:false, type:"video/mp4", url: "sites/default/files/video/index-1.mp4", image:"", dateTime:"2018-12-25 21:30"},
+        {title:"视频2", isplay:false, type:"video/mp4", url: "sites/default/files/video/index-2.mp4", image:"", dateTime:"2018-12-25 21:30"},
+        {title:"视频3", isplay:false, type:"video/mp4", url: "sites/default/files/video/index-3.mp4", image:"", dateTime:"2018-12-25 21:30"},
+    ];
     (function(){
         // var player = videojs('index-video',{
 //            muted: true,
@@ -798,6 +801,30 @@
 //            loop : true,
             // 更多配置.....
         // });
+
+        var player = videojs("my-player", {
+            "width":"100%",
+            "poster":"",
+            "autoplay":true,
+            "controls":true,
+            "sources":[{
+                src: video_list[i].url,
+                type: video_list[i].type
+            }],
+        }, function(){
+            this.on('loadeddata',function(){
+
+            })
+            this.on('ended',function(){
+                i++;
+                if(i >= video_list.length){
+                    i = 0;
+                }
+                var videoObj = video_list[i];
+                this.src({type: videoObj.type, src: videoObj.url});
+                this.play();
+            })
+        });
     })();
 </script>
 </body>
