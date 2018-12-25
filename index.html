@@ -82,6 +82,7 @@
     <link type="text/css" rel="stylesheet"
           href="http://118.25.5.174:8001/sites/default/files/advagg_css/css__Mj-bIy5ZdhbjdVA7pHj7Qe9m1oxe9CofTDqdsAN1VkQ__3prFeLb_afdguwIlPlT7j2yNOxXL1V-zHkJXtlD9PY0__ajtl5luqwPIno5HZrQI719QK_aLTjJ2u5I7jOUzzXOI.css"
           media="all"/>
+    <link href="https://vjs.zencdn.net/7.3.0/video-js.css" rel="stylesheet">
     <script src="http://118.25.5.174:8001/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")</script>
     <script src="http://118.25.5.174:8001/sites/default/files/advagg_js/js__ugDsZJ2dOaLkOJRHPrUAsZ0dZZjfMd78DovI4VKBmwU__aLwC6ZxdZl35HxddHbbKhpkt8Q5bS4DUXp3jqjQhnuo__ajtl5luqwPIno5HZrQI719QK_aLTjJ2u5I7jOUzzXOI.js"></script>
@@ -89,6 +90,9 @@
     <script src="http://118.25.5.174:8001/sites/default/files/advagg_js/js__wI1mpU9QviPCacnK8vyMw4G57ZS9cew6B5y4HMICfQo__JQxxRG6qquIfkdqQTjSu-8P-emkQdID3SyHkemwFIys__ajtl5luqwPIno5HZrQI719QK_aLTjJ2u5I7jOUzzXOI.js"></script>
     <script src="http://118.25.5.174:8001/sites/default/files/advagg_js/js__E03bx9T7Cl2Nncz0DO_A88oNTAD4vOLG52xmu42wsYs__PCDL3few28DfTbjE8PWhMWPp8wyg8UrKJJATV9CtI4E__ajtl5luqwPIno5HZrQI719QK_aLTjJ2u5I7jOUzzXOI.js"></script>
     <script src="http://118.25.5.174:8001/sites/default/files/advagg_js/js__rg7bG81ta54nzlGPZXvniZs5IsNLVUzqURRYxeNY70o__JjhJ3bRfrQrusaDMc1vpvQ9ldjD6MHERy2Bw10ohamw__ajtl5luqwPIno5HZrQI719QK_aLTjJ2u5I7jOUzzXOI.js"></script>
+    <!--[if IE 8]>    
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+    <![endif]-->
     <script>jQuery.extend(Drupal.settings, {
         "basePath": "\/",
         "pathPrefix": "",
@@ -282,6 +286,18 @@
         #block-bean-boat-repair .block-title{background-color: #818286; padding: 0 0 0 15px;}
         #block-bean-boat-charter{ padding:0px 0 0; }
         #block-bean-boat-charter .block-title{background-color: #818286; padding: 0 0 0 15px;}
+
+
+        .vjs-paused .vjs-big-play-button,
+        .vjs-paused.vjs-has-started .vjs-big-play-button { display: block; }
+        .video-js .vjs-big-play-button{ font-size: 2.5em; line-height: 2.3em; height: 2.5em; width: 2.5em; -webkit-border-radius: 2.5em; -moz-border-radius: 2.5em; border-radius: 2.5em; background-color: #73859f; background-color: rgba(115,133,159,.5); border-width: 0.15em; margin-top: -1.25em; margin-left: -1.75em; }
+        /* 中间的播放箭头 */
+        .vjs-big-play-button .vjs-icon-placeholder { font-size: 1.63em; }
+        /* 加载圆圈 */
+        .vjs-loading-spinner { font-size: 2.5em; width: 2em; height: 2em; border-radius: 1em; margin-top: -1em; margin-left: -1.5em;}
+        .video-js.vjs-playing .vjs-tech {pointer-events: auto;}
+        .video-js .vjs-time-control{display:block;}
+        .video-js .vjs-remaining-time{display: none;}
     </style>
 </head>
 <body class="html front not-logged-in one-sidebar sidebar-second page-homepage page-views">
@@ -431,81 +447,12 @@
                         <div class="view-content">
                             <div id="flexslider-1" class="flexslider">
                                 <ul class="slides">
-                                    <!--
-                                    <li>
-                                        <div class="views-field views-field-field-slide-image">
-                                            <div class="field-content"><img typeof="foaf:Image"
-                                                                            src="http://118.25.5.174:8001/sites/default/files/styles/homepage_slide_690x428/public/UFO-foiler-UK.jpg"
-                                                                            width="690" height="428"
-                                                                            alt="The UFO Foil - COMING TO IBI IN 2019"/>
-                                            </div>
-                                        </div>
-                                        <div class="views-field views-field-body">
-                                            <div class="field-content"><h1>The UFO Foil - COMING 2019</h1>
-                                                <p>Low maintenance, fun, extremely fast, stable and forgiving! <a
-                                                        href="contact-us">Contact us</a> for more info.</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="views-field views-field-field-slide-image">
-                                            <div class="field-content"><img typeof="foaf:Image"
-                                                                            src="http://118.25.5.174:8001/sites/default/files/styles/homepage_slide_690x428/public/420%20dinghy.png"
-                                                                            width="690" height="428" alt="420 dinghy"/>
-                                            </div>
-                                        </div>
-                                        <div class="views-field views-field-body">
-                                            <div class="field-content"><h1>Boat packages</h1>
-                                                <p><span style="font-size: medium;">New and used </span></p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="views-field views-field-field-slide-image">
-                                            <div class="field-content"><a
-                                                    href="http://www.racingdinghies.co.uk/rs-sailing"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/styles/homepage_slide_690x428/public/2013_FevaWorlds3lo-res_0.jpg"
-                                                    width="690" height="428" alt="RS Tera, Feva, 200 and 2000"/></a>
-                                            </div>
-                                        </div>
-                                        <div class="views-field views-field-body">
-                                            <div class="field-content"><a
-                                                    href="http://www.racingdinghies.co.uk/rs-sailing"><h1>RS
-                                                Dinghies</h1>
-                                                <p><span style="font-size: medium;">RS Tera, Feva, 200 and 2000 boat packages and spares</span>
-                                                </p>
-                                            </a></div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="views-field views-field-field-slide-image">
-                                            <div class="field-content"><img typeof="foaf:Image"
-                                                                            src="http://118.25.5.174:8001/sites/default/files/styles/homepage_slide_690x428/public/Optimist%20dinghy.png"
-                                                                            width="690" height="428" alt=""/></div>
-                                        </div>
-                                        <div class="views-field views-field-body">
-                                            <div class="field-content"><h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    -->
-
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
                                             <div class="field-content"><img typeof="foaf:Image"
                                                                             src="http://118.25.5.174:8001/sites/default/files/690x428/1.jpg"
                                                                             width="690" height="428" alt=""/></div>
                                         </div>
-                                        <!--<div class="views-field views-field-body">
-                                            <div class="field-content">
-                                                <h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>-->
                                     </li>
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
@@ -513,13 +460,6 @@
                                                                             src="http://118.25.5.174:8001/sites/default/files/690x428/2.jpg"
                                                                             width="690" height="428" alt=""/></div>
                                         </div>
-                                        <!--<div class="views-field views-field-body">
-                                            <div class="field-content">
-                                                <h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>-->
                                     </li>
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
@@ -527,13 +467,6 @@
                                                                             src="http://118.25.5.174:8001/sites/default/files/690x428/3.jpg"
                                                                             width="690" height="428" alt=""/></div>
                                         </div>
-                                        <!--<div class="views-field views-field-body">
-                                            <div class="field-content">
-                                                <h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>-->
                                     </li>
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
@@ -541,13 +474,6 @@
                                                                             src="http://118.25.5.174:8001/sites/default/files/690x428/4.jpg"
                                                                             width="690" height="428" alt=""/></div>
                                         </div>
-                                        <!--<div class="views-field views-field-body">
-                                            <div class="field-content">
-                                                <h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>-->
                                     </li>
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
@@ -555,13 +481,6 @@
                                                                             src="http://118.25.5.174:8001/sites/default/files/690x428/5.jpg"
                                                                             width="690" height="428" alt=""/></div>
                                         </div>
-                                        <!--<div class="views-field views-field-body">
-                                            <div class="field-content">
-                                                <h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>-->
                                     </li>
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
@@ -569,13 +488,6 @@
                                                                             src="http://118.25.5.174:8001/sites/default/files/690x428/6.jpg"
                                                                             width="690" height="428" alt=""/></div>
                                         </div>
-                                        <!--<div class="views-field views-field-body">
-                                            <div class="field-content">
-                                                <h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>-->
                                     </li>
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
@@ -583,13 +495,6 @@
                                                                             src="http://118.25.5.174:8001/sites/default/files/690x428/7.jpg"
                                                                             width="690" height="428" alt=""/></div>
                                         </div>
-                                        <!--<div class="views-field views-field-body">
-                                            <div class="field-content">
-                                                <h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>-->
                                     </li>
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
@@ -597,13 +502,6 @@
                                                                             src="http://118.25.5.174:8001/sites/default/files/690x428/8.jpg"
                                                                             width="690" height="428" alt=""/></div>
                                         </div>
-                                        <!--<div class="views-field views-field-body">
-                                            <div class="field-content">
-                                                <h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>-->
                                     </li>
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
@@ -611,13 +509,6 @@
                                                                             src="http://118.25.5.174:8001/sites/default/files/690x428/9.jpg"
                                                                             width="690" height="428" alt=""/></div>
                                         </div>
-                                        <!--<div class="views-field views-field-body">
-                                            <div class="field-content">
-                                                <h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>-->
                                     </li>
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
@@ -625,13 +516,6 @@
                                                                             src="http://118.25.5.174:8001/sites/default/files/690x428/10.jpg"
                                                                             width="690" height="428" alt=""/></div>
                                         </div>
-                                        <!--<div class="views-field views-field-body">
-                                            <div class="field-content">
-                                                <h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>-->
                                     </li>
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
@@ -639,13 +523,6 @@
                                                                             src="http://118.25.5.174:8001/sites/default/files/690x428/11.jpg"
                                                                             width="690" height="428" alt=""/></div>
                                         </div>
-                                        <!--<div class="views-field views-field-body">
-                                            <div class="field-content">
-                                                <h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>-->
                                     </li>
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
@@ -653,13 +530,6 @@
                                                                             src="http://118.25.5.174:8001/sites/default/files/690x428/12.jpg"
                                                                             width="690" height="428" alt=""/></div>
                                         </div>
-                                        <!--<div class="views-field views-field-body">
-                                            <div class="field-content">
-                                                <h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>-->
                                     </li>
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
@@ -667,13 +537,6 @@
                                                                             src="http://118.25.5.174:8001/sites/default/files/690x428/13.jpg"
                                                                             width="690" height="428" alt=""/></div>
                                         </div>
-                                        <!--<div class="views-field views-field-body">
-                                            <div class="field-content">
-                                                <h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>-->
                                     </li>
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
@@ -681,42 +544,20 @@
                                                                             src="http://118.25.5.174:8001/sites/default/files/690x428/14.jpg"
                                                                             width="690" height="428" alt=""/></div>
                                         </div>
-                                        <!--<div class="views-field views-field-body">
-                                            <div class="field-content">
-                                                <h1>Official IOCA chandler</h1>
-                                                <p><span style="font-size: medium;">Comprehensive range of Optimist spares available</span>
-                                                </p>
-                                            </div>
-                                        </div>-->
                                     </li>
                                 </ul>
                             </div>
 
                             <div id="intro-1" class="views-field views-field-body">
                                 <div class="field-content">
-                                    <h1>OnePlus PE</h1>
-                                    <h2>PE- Polyethylene Club Trainer</h2>
-                                    <p>
-                                    <span style="font-size: medium;">
-                                        The perfect training boat for clubs and sailing schools.<br/>
-                                        Constructed from three layers of Polyethylene and made in aluminum moulds, the boat is much stiffer and tougher than standard training Optimists. It is fully UV stabilized, has extremely good buoyancy and is maintenance free. White as standard colour but other colours are available (blue, yellow, orange, red, green). A robust trolley is available as an optional extra.<br/>
-                                        Features:<br/>
-                                        - Spacious: 1 kid; 2 kids; 1 kid+1 adult<br/>
-                                        - Maintenance free and longer life-span<br/>
-                                        - Extra strong Mast thwart<br/>
-                                        - Two inspection hatches<br/>
-                                        - Water bottle holder in midship frame.<br/>
-                                        - Three ribs on the bottom for stiffness and dragging the boat up and down the beach.<br/>
-                                        - Completely fitted with standard optimist parts.<br/>
-                                        - Two Daggerboard friction rubbers.<br/>
-                                        - Self draining cockpit<br/>
-                                        - Adjustable Mast step<br/>
-                                        - Handgrip for pulling the boat<br/>
-                                        - Sleeve sail<br/>
-                                        - GRP rudder and daggerboard as opposed to the wood foils of other PE Optimists<br/>
-                                        - 39 kg hull weight<br/>
-                                        </span>
-                                    </p>
+                                    <video id="index-video" class="video-js vjs-big-play-centered" controls preload="auto" width="640" height="264"
+                                           poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+                                        <source src="sites/default/files/video/index-1.mp4" type='video/mp4'>
+                                        <p class="vjs-no-js">
+                                            To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                        </p>
+                                    </video>
                                 </div>
                             </div>
                         </div>
@@ -724,143 +565,11 @@
 
                     </div>
                     <div id="block-views-homepage-products-block" class="block block-views even">
-
-                        <!--<h2 class="block__title block-title">Featured Products</h2>-->
-
                         <div class="view view-homepage-products view-id-homepage_products view-display-id-block view-dom-id-9b7599185229c8a2c2150ea8abbca8ed">
 
 
                             <div class="view-content">
                                 <div class="views-responsive-grid views-responsive-grid-horizontal views-columns-3">
-                                    <!--
-                                    <div class="views-row views-row-1 views-row-first">
-                                        <div class="views-column views-column-1 views-column-first">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a
-                                                        href="/dinghies/czygar-optimist-daggerboard-flex"><img
-                                                        typeof="foaf:Image"
-                                                        src="http://118.25.5.174:8001/sites/default/files/styles/homepage_featured_products/public/czygar%20daggerboard%202.jpg"
-                                                        width="170" height="120" alt="Czygar optimist daggerboard"/></a>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                    href="/dinghies/czygar-optimist-daggerboard-flex">Czygar Optimist Daggerboard (Flex)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                    class="field-content"><span class="uc-price">£179.94</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-2">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/dsk-foils-dynamis-rudder"><img
-                                                        typeof="foaf:Image"
-                                                        src="http://118.25.5.174:8001/sites/default/files/styles/homepage_featured_products/public/DSK%20Foils%20DyNaMiS%20Rudder.png"
-                                                        width="170" height="120" alt="DSK Foils DyNaMiS Rudder"/></a>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                    href="/dinghies/dsk-foils-dynamis-rudder">DSK Foils DyNaMiS Rudder</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                    class="field-content"><span class="uc-price">£275.00</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-3">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/mackay-420"><img
-                                                        typeof="foaf:Image"
-                                                        src="http://118.25.5.174:8001/sites/default/files/styles/homepage_featured_products/public/2864_mackay_420.gif"
-                                                        width="170" height="120" alt=""/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                    href="/dinghies/mackay-420">Mackay 420</a></span></div>
-                                            <div class="views-field views-field-display-price"><span
-                                                    class="field-content"><span
-                                                    class="uc-price">£12,995.00</span></span></div>
-                                        </div>
-                                        <div class="views-column views-column-4 views-column-last">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/chandlery/plastic-hook-ex1443"><img
-                                                        typeof="foaf:Image"
-                                                        src="http://118.25.5.174:8001/sites/default/files/styles/homepage_featured_products/public/2847_plastic_hook.gif"
-                                                        width="170" height="120" alt=""/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                    href="/chandlery/plastic-hook-ex1443">Plastic Hook (EX1443)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                    class="field-content"><span class="uc-price">£1.00</span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="views-row views-row-2 views-row-last">
-                                        <div class="views-column views-column-1 views-column-first">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a
-                                                        href="/dinghies/optiparts-optimist-economy-top-cover-ex1082"><img
-                                                        typeof="foaf:Image"
-                                                        src="http://118.25.5.174:8001/sites/default/files/styles/homepage_featured_products/public/1398.gif"
-                                                        width="170" height="120" alt=""/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                    href="/dinghies/optiparts-optimist-economy-top-cover-ex1082">Optiparts Optimist Economy Top Cover (EX1082)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                    class="field-content"><span class="uc-price">£89.95</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-2">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/oneplus-pe-opti"><img
-                                                        typeof="foaf:Image"
-                                                        src="http://118.25.5.174:8001/sites/default/files/styles/homepage_featured_products/public/PE%20OPTI-ONEPLUS2.png"
-                                                        width="170" height="120" alt="OnePlus PE Opti"/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                    href="/dinghies/oneplus-pe-opti">OnePlus PE Opti</a></span></div>
-                                            <div class="views-field views-field-display-price"><span
-                                                    class="field-content"><span class="uc-price">£1,095.00</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-3">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a
-                                                        href="/chandlery/chandlery/books-dvds-and-cds/marlow-splicing-guide"><img
-                                                        typeof="foaf:Image"
-                                                        src="http://118.25.5.174:8001/sites/default/files/styles/homepage_featured_products/public/Screen%20Shot%202017-11-09%20at%2010.45.29.png"
-                                                        width="170" height="120" alt="Marlow Splicing Guide"/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                    href="/chandlery/chandlery/books-dvds-and-cds/marlow-splicing-guide">Marlow Splicing Guide</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                    class="field-content"><span class="uc-price">£14.99</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-4 views-column-last">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/super-spars-470-boom"><img
-                                                        typeof="foaf:Image"
-                                                        src="http://118.25.5.174:8001/sites/default/files/styles/homepage_featured_products/public/Screen%20Shot%202017-01-19%20at%2012.02.32.png"
-                                                        width="170" height="120" alt="Super Spars 470 Boom"/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                    href="/dinghies/super-spars-470-boom">Super Spars 470 Boom</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                    class="field-content"><span class="uc-price">£183.14</span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    -->
                                     <div class="views-row views-row-1 views-row-first">
                                         <div class="views-column views-column-1 views-column-first">
 
@@ -872,13 +581,6 @@
                                                     width="220" height="220" alt="Czygar optimist daggerboard"/></a>
                                                 </div>
                                             </div>
-                                            <!--
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/czygar-optimist-daggerboard-flex">Czygar Optimist Daggerboard (Flex)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£179.94</span></span>
-                                            </div>-->
                                         </div>
                                         <div class="views-column views-column-2">
                                             <div class="views-field views-field-uc-product-image">
@@ -888,14 +590,6 @@
                                                     width="220" height="220" alt="DSK Foils DyNaMiS Rudder"/></a>
                                                 </div>
                                             </div>
-                                            <!--
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/dsk-foils-dynamis-rudder">DSK Foils DyNaMiS Rudder</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£275.00</span></span>
-                                            </div>
-                                            -->
                                         </div>
                                         <div class="views-column views-column-3 views-column-last">
 
@@ -905,13 +599,6 @@
                                                     src="http://118.25.5.174:8001/sites/default/files/225x225/3.jpg"
                                                     width="220" height="220" alt=""/></a></div>
                                             </div>
-                                            <!--
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/mackay-420">Mackay 420</a></span></div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span
-                                                class="uc-price">£12,995.00</span></span></div>
-                                                -->
                                         </div>
                                     </div>
                                     <div class="views-row views-row-2 views-row-last">
@@ -925,14 +612,6 @@
                                                     width="220" height="220" alt="Czygar optimist daggerboard"/></a>
                                                 </div>
                                             </div>
-                                            <!--
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/czygar-optimist-daggerboard-flex">Czygar Optimist Daggerboard (Flex)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£179.94</span></span>
-                                            </div>
-                                            -->
                                         </div>
                                         <div class="views-column views-column-2">
 
@@ -943,14 +622,6 @@
                                                     width="220" height="220" alt="DSK Foils DyNaMiS Rudder"/></a>
                                                 </div>
                                             </div>
-                                            <!--
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/dsk-foils-dynamis-rudder">DSK Foils DyNaMiS Rudder</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£275.00</span></span>
-                                            </div>
-                                            -->
                                         </div>
                                         <div class="views-column views-column-3 views-column-last">
 
@@ -960,401 +631,8 @@
                                                     src="http://118.25.5.174:8001/sites/default/files/225x225/6.jpg"
                                                     width="220" height="220" alt=""/></a></div>
                                             </div>
-                                            <!--
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/chandlery/plastic-hook-ex1443">Plastic Hook (EX1443)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£1.00</span></span>
-                                            </div>
-                                            -->
                                         </div>
                                     </div>
-                                    <!--
-                                    <div class="views-row views-row-3 ">
-                                        <div class="views-column views-column-1 views-column-first">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a
-                                                    href="/dinghies/czygar-optimist-daggerboard-flex"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/9.jpg"
-                                                    width="170" height="120" alt="Czygar optimist daggerboard"/></a>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/czygar-optimist-daggerboard-flex">Czygar Optimist Daggerboard (Flex)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£179.94</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-2">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/dsk-foils-dynamis-rudder"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/10.jpg"
-                                                    width="170" height="120" alt="DSK Foils DyNaMiS Rudder"/></a>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/dsk-foils-dynamis-rudder">DSK Foils DyNaMiS Rudder</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£275.00</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-3">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/mackay-420"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/11.jpg"
-                                                    width="170" height="120" alt=""/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/mackay-420">Mackay 420</a></span></div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span
-                                                class="uc-price">£12,995.00</span></span></div>
-                                        </div>
-                                        <div class="views-column views-column-4 views-column-last">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/chandlery/plastic-hook-ex1443"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/12.jpg"
-                                                    width="170" height="120" alt=""/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/chandlery/plastic-hook-ex1443">Plastic Hook (EX1443)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£1.00</span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="views-row views-row-4 ">
-                                        <div class="views-column views-column-1 views-column-first">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a
-                                                    href="/dinghies/czygar-optimist-daggerboard-flex"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/13.jpg"
-                                                    width="170" height="120" alt="Czygar optimist daggerboard"/></a>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/czygar-optimist-daggerboard-flex">Czygar Optimist Daggerboard (Flex)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£179.94</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-2">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/dsk-foils-dynamis-rudder"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/14.jpg"
-                                                    width="170" height="120" alt="DSK Foils DyNaMiS Rudder"/></a>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/dsk-foils-dynamis-rudder">DSK Foils DyNaMiS Rudder</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£275.00</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-3">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/mackay-420"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/15.jpg"
-                                                    width="170" height="120" alt=""/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/mackay-420">Mackay 420</a></span></div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span
-                                                class="uc-price">£12,995.00</span></span></div>
-                                        </div>
-                                        <div class="views-column views-column-4 views-column-last">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/chandlery/plastic-hook-ex1443"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/16.jpg"
-                                                    width="170" height="120" alt=""/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/chandlery/plastic-hook-ex1443">Plastic Hook (EX1443)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£1.00</span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="views-row views-row-5 ">
-                                        <div class="views-column views-column-1 views-column-first">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a
-                                                    href="/dinghies/czygar-optimist-daggerboard-flex"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/17.jpg"
-                                                    width="170" height="120" alt="Czygar optimist daggerboard"/></a>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/czygar-optimist-daggerboard-flex">Czygar Optimist Daggerboard (Flex)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£179.94</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-2">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/dsk-foils-dynamis-rudder"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/18.jpg"
-                                                    width="170" height="120" alt="DSK Foils DyNaMiS Rudder"/></a>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/dsk-foils-dynamis-rudder">DSK Foils DyNaMiS Rudder</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£275.00</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-3">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/mackay-420"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/19.jpg"
-                                                    width="170" height="120" alt=""/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/mackay-420">Mackay 420</a></span></div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span
-                                                class="uc-price">£12,995.00</span></span></div>
-                                        </div>
-                                        <div class="views-column views-column-4 views-column-last">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/chandlery/plastic-hook-ex1443"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/20.jpg"
-                                                    width="170" height="120" alt=""/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/chandlery/plastic-hook-ex1443">Plastic Hook (EX1443)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£1.00</span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="views-row views-row-6 ">
-                                        <div class="views-column views-column-1 views-column-first">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a
-                                                    href="/dinghies/czygar-optimist-daggerboard-flex"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/21.jpg"
-                                                    width="170" height="120" alt="Czygar optimist daggerboard"/></a>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/czygar-optimist-daggerboard-flex">Czygar Optimist Daggerboard (Flex)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£179.94</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-2">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/dsk-foils-dynamis-rudder"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/22.jpg"
-                                                    width="170" height="120" alt="DSK Foils DyNaMiS Rudder"/></a>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/dsk-foils-dynamis-rudder">DSK Foils DyNaMiS Rudder</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£275.00</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-3">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/mackay-420"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/23.jpg"
-                                                    width="170" height="120" alt=""/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/mackay-420">Mackay 420</a></span></div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span
-                                                class="uc-price">£12,995.00</span></span></div>
-                                        </div>
-                                        <div class="views-column views-column-4 views-column-last">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/chandlery/plastic-hook-ex1443"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/24.jpg"
-                                                    width="170" height="120" alt=""/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/chandlery/plastic-hook-ex1443">Plastic Hook (EX1443)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£1.00</span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="views-row views-row-7 ">
-                                        <div class="views-column views-column-1 views-column-first">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a
-                                                    href="/dinghies/czygar-optimist-daggerboard-flex"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/25.jpg"
-                                                    width="170" height="120" alt="Czygar optimist daggerboard"/></a>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/czygar-optimist-daggerboard-flex">Czygar Optimist Daggerboard (Flex)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£179.94</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-2">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/dsk-foils-dynamis-rudder"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/26.jpg"
-                                                    width="170" height="120" alt="DSK Foils DyNaMiS Rudder"/></a>
-                                                </div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/dsk-foils-dynamis-rudder">DSK Foils DyNaMiS Rudder</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£275.00</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-3">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/mackay-420"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/27.jpg"
-                                                    width="170" height="120" alt=""/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/mackay-420">Mackay 420</a></span></div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span
-                                                class="uc-price">£12,995.00</span></span></div>
-                                        </div>
-                                        <div class="views-column views-column-4 views-column-last">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/chandlery/plastic-hook-ex1443"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/28.jpg"
-                                                    width="170" height="120" alt=""/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/chandlery/plastic-hook-ex1443">Plastic Hook (EX1443)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£1.00</span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="views-row views-row-8 views-row-last">
-                                        <div class="views-column views-column-1 views-column-first">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a
-                                                    href="/dinghies/optiparts-optimist-economy-top-cover-ex1082"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/29.jpg"
-                                                    width="170" height="120" alt=""/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/optiparts-optimist-economy-top-cover-ex1082">Optiparts Optimist Economy Top Cover (EX1082)</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£89.95</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-2">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/oneplus-pe-opti"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/30.jpg"
-                                                    width="170" height="120" alt="OnePlus PE Opti"/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/oneplus-pe-opti">OnePlus PE Opti</a></span></div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£1,095.00</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-3">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a
-                                                    href="/chandlery/chandlery/books-dvds-and-cds/marlow-splicing-guide"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/31.jpg"
-                                                    width="170" height="120" alt="Marlow Splicing Guide"/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/chandlery/chandlery/books-dvds-and-cds/marlow-splicing-guide">Marlow Splicing Guide</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£14.99</span></span>
-                                            </div>
-                                        </div>
-                                        <div class="views-column views-column-4 views-column-last">
-
-                                            <div class="views-field views-field-uc-product-image">
-                                                <div class="field-content"><a href="/dinghies/super-spars-470-boom"><img
-                                                    typeof="foaf:Image"
-                                                    src="http://118.25.5.174:8001/sites/default/files/170x120/32.jpg"
-                                                    width="170" height="120" alt="Super Spars 470 Boom"/></a></div>
-                                            </div>
-                                            <div class="views-field views-field-title"><span class="field-content"><a
-                                                href="/dinghies/super-spars-470-boom">Super Spars 470 Boom</a></span>
-                                            </div>
-                                            <div class="views-field views-field-display-price"><span
-                                                class="field-content"><span class="uc-price">£183.14</span></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    -->
                                 </div>
                             </div>
 
@@ -1369,34 +647,6 @@
                                 src="http://118.25.5.174:8001/sites/default/files/6color.jpg"
                                 alt="Neil Pryde" width="685" height="171"/></a></p>
                     </div>
-                    <!--
-                    <div id="block-block-11" class="block block-block odd">
-
-                        <h2 class="block__title block-title">Featured Manufacturers</h2>
-
-                        <p><a href="http://118.25.5.174:8001/neil-pryde"><img
-                                src="http://118.25.5.174:8001/sites/default/files/neil-pryde-sailing.gif"
-                                alt="Neil Pryde" width="510" height="360"/></a><a
-                                href="http://118.25.5.174:8001/rs-sailing-0"><img
-                                src="http://118.25.5.174:8001/sites/default/files/rs-sailing.gif" alt="RS Sailing"
-                                width="510" height="360"/></a><a
-                                href="http://118.25.5.174:8001/dinghies/optimist"><img
-                                src="http://118.25.5.174:8001/sites/default/files/optimist.gif" alt="Optimist"
-                                width="510" height="360"/></a><a href="http://118.25.5.174:8001/super-spars"
-                                                                 id="last"><img
-                                src="http://118.25.5.174:8001/sites/default/files/super-spars.gif" alt="Super Spars"
-                                width="510" height="360"/></a></p>
-
-                    </div>
-                    -->
-                    <!--
-                    <div id="block-block-2" class="block block-block last even">
-
-
-                        <h2>Call us on 01243 513002 for assistance with your order</h2>
-
-                    </div>
-                    -->
                 </div>
             </div>
 
@@ -1448,33 +698,6 @@
                     </div>
 
                 </div>
-                <!--
-                <div id="block-views-exp-search-results-page" class="block block-views odd">
-
-                    <h2 class="block__title block-title">Search</h2>
-
-                    <form action="/search-results" method="get" id="views-exposed-form-search-results-page"
-                          accept-charset="UTF-8">
-                        <div>
-                            <div class="views-exposed-form">
-                                <div class="views-exposed-widgets clearfix">
-                                    <div id="edit-title-wrapper" class="views-exposed-widget views-widget-filter-title">
-                                        <div class="views-widget">
-                                            <div class="form-item form-type-textfield form-item-title">
-                                                <input type="text" id="edit-title" name="title" value="" size="30"
-                                                       maxlength="128" class="form-text"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="views-exposed-widget views-submit-button">
-                                        <input type="submit" id="edit-submit-search-results" name="" value="Search"
-                                               class="form-submit"/></div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                -->
                 <div id="block-views-blog-posts-block" class="block block-views even">
 
                     <h2 class="block__title block-title">Racing blog...</h2>
@@ -1599,5 +822,19 @@
     </div>
 </div>
 <script src="http://118.25.5.174:8001/sites/default/files/advagg_js/js__9VOFA0ojDRe-jzLYqMfhS65SJRxkYxfImCkNhDzFTGY__303WIuiWT3VWvFC6uhfqIZq0KlK2nYVnjfIOpqHEtUU__ajtl5luqwPIno5HZrQI719QK_aLTjJ2u5I7jOUzzXOI.js"></script>
+<script src="https://vjs.zencdn.net/7.3.0/video.js"></script>
+<script>window.HELP_IMPROVE_VIDEOJS = false;</script>
+<script>
+    (function(){
+        var player = videojs('index-video',{
+//            muted: true,
+//            controls : true/false,
+//            height:300,
+//            width:300,
+//            loop : true,
+            // 更多配置.....
+        });
+    })();
+</script>
 </body>
 </html>
