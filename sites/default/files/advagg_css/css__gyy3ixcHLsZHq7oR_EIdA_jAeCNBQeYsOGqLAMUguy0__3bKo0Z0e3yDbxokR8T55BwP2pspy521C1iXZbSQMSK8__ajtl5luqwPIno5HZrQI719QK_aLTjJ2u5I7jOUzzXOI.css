@@ -1007,8 +1007,9 @@ table {
     }
 
     .view-taxonomy-images .views-column {
-        width: 188px;
-        margin-right: 40px;
+        width:190px;
+        height:190px;
+        margin-right:20px;
         float: left;
         min-height: 160px;
         margin-bottom: 30px
