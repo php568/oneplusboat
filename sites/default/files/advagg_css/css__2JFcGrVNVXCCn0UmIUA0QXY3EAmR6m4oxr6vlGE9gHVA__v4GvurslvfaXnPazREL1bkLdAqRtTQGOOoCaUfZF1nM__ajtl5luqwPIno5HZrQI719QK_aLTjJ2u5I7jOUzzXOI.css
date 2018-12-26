@@ -414,7 +414,7 @@ table{
 #header:after,#main:after,#footer:after{
     clear:both
 }
-#header,.not-front #content .content-wrapper,.sidebar .block,.region-content-bottom .block,.region-bottom #block-menu-menu-footer-menu,#block-views-homepage-products-block .views-column{
+#header,.sidebar .block,.region-content-bottom .block,.region-bottom #block-menu-menu-footer-menu,#block-views-homepage-products-block .views-column{
     background:#0d181f;
     background:rgba(13,24,31,.8);
     box-shadow:#444 0 0 6px;
@@ -2020,7 +2020,7 @@ div.checker{
     color:#fff
 }
 
-#content .content-wrapper{
+.not-front #content .content-wrapper{
     background: rgba(0,0,4,0);
     box-shadow: none;
 }
