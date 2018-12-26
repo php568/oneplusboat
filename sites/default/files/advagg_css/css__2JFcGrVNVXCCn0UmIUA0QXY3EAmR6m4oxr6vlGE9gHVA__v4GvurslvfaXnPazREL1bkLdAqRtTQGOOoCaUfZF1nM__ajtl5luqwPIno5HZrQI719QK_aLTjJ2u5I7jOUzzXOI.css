@@ -154,7 +154,7 @@ a:link{
     color:#00a9e7 !important
 }
 #content .view a:link,#content .view a:visited{
-    color:#fff
+    /*color:#fff*/
 }
 .block .menu a:link,.block .menu a:visited{
     color:#fff
