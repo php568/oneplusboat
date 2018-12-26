@@ -590,9 +590,8 @@ table{
     padding:0
 }
 .view-taxonomy-term .views-row,.view-taxonomy-images .views-column,#block-views-homepage-products-block .views-column,.view-search-results .views-row,.view-you-might-also-be-interested-in .views-row{
-    background-color:#0d181f;
-    /*border-bottom:2px solid #00a9e7;
-    */
+    background-color:#818286; /* #0d181f; */
+    /*border-bottom:2px solid #00a9e7;*/
     text-align:center
 }
 .view-taxonomy-term .views-column-last,.view-taxonomy-images .views-column-last,.view-search-results .views-column-last{
