@@ -1806,64 +1806,64 @@ div.checker{
     color:#00a9e7
 }
 .captcha{
-    margin:10px 0
+    margin:10px 0;
 }
 .tb-megamenu .tb-block .block-title{
     font-size:13px;
     margin-bottom:3px;
-    text-transform:none
+    text-transform:none;
 }
 .tb-megamenu .block-views .views-field-name{
     font-size:95%;
-    padding:0
+    padding:0;
 }
 .block-views .views-field-name a{
     padding:1px 2px !important;
-    white-space:normal
+    white-space:normal;
 }
 .block-views .views-field-name a:hover{
-    color:#00a9e7
+    color:#00a9e7;
 }
 .tb-megamenu-nav li.level-1:nth-child(5) a.dropdown-toggle{
-    background-color:#58585A
+    background-color:#58585A;
 }
 .tb-megamenu-nav li.level-1:nth-child(5) a.dropdown-toggle:hover,.tb-megamenu-nav li.level-1:nth-child(5) a.dropdown-toggle:focus,.tb-megamenu-nav li.level-1.open:nth-child(5) a.dropdown-toggle,.tb-megamenu-nav li.level-1:nth-child(5) a.dropdown-toggle{
     background-color:#58585A !important;
-    color:#ffffff !important
+    color:#ffffff !important;
 }
 .tb-megamenu-nav li.level-1.open:nth-child(5) .view a,.tb-megamenu .dropdown-menu .active>a{
-    background:0 0 !important
+    background:0 0 !important;
 }
 .tb-megamenu-nav li:nth-child(1) .tb-megamenu-column{
     margin-left:0;
-    width:20%
+    width:20%;
 }
 .tb-megamenu-nav li:nth-child(1) .tb-megamenu-column:nth-child(6){
-    clear:left
+    clear:left;
 }
 .tb-megamenu-nav li:nth-child(1) .tb-megamenu-column .block-views .view-menu-blocks{
-    margin-left:-2px
+    margin-left:-2px;
 }
 .page-admin-store-orders-invoice table,.page-cart-checkout .pane-title-row{
-    color:#000
+    color:#000;
 }
 #uc-order-total-preview .line-item-subtotal{
-    display:none
+    display:none;
 }
 .page-blog .node-blog{
     border-bottom:3px solid #00a9e7;
     margin-bottom:1em;
-    padding-bottom:2em
+    padding-bottom:2em;
 }
 .node-blog h2{
     line-height:1.2em;
-    margin-bottom:0
+    margin-bottom:0;
 }
 .node-type-product .sharethis-wrapper{
-    margin-top:3em
+    margin-top:3em;
 }
 .field-name-field-photo-image,.field-name-field-images{
-    margin-bottom:1em
+    margin-bottom:1em;
 }
 .node .field-name-uc-product-image .field-items div:first-of-type a:after,.node .field-name-field-images .field-items div:first-of-type a:after{
     background:url(http://118.25.5.174:8001/sites/all/themes/racingdinghies/images/magnifying.png) no-repeat 82% 0;
