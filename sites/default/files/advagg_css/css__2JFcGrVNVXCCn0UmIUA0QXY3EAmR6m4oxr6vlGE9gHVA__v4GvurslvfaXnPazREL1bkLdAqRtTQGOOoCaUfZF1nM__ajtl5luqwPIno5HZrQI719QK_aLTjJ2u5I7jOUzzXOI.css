@@ -2021,7 +2021,7 @@ div.checker{
 }
 
 .not-front #content .content-wrapper{
-    background: rgba(0,0,4,0);
+    background: rgba(240,240,240,0);
     box-shadow: none;
 }
 #content-inner{
