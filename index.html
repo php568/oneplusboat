@@ -308,6 +308,17 @@
             outline: 0;
         }
         #index-video{width: 100%;min-height: 389px;}
+
+        .layui-carousel-arrow[lay-type=sub]{
+            background: url(http://118.25.5.174:8001/sites/all/themes/racingdinghies/images/left-arrow.png) no-repeat;
+            width: 22px !important;
+            height: 72px !important;
+        }
+        .layui-carousel-arrow[lay-type=add]{
+            background: url(http://118.25.5.174:8001/sites/all/themes/racingdinghies/images/right-arrow.png) no-repeat;
+            width: 22px !important;
+            height: 72px !important;
+        }
     </style>
 </head>
 <body class="html front not-logged-in one-sidebar sidebar-second page-homepage page-views">
@@ -453,8 +464,8 @@
                     <div class="view view-homepage view-id-homepage view-display-id-page view-dom-id-6f2cac949f64f36bb049843a0e7be506">
 
                         <div class="view-content">
-                            <div id="flexslider-1" class="flexslider">
-                                <ul class="slides">
+                            <div id="flexslider-2" class="flexslider_2 layui-carousel">
+                                <ul class="slides" carousel-item>
                                     <li>
                                         <div class="views-field views-field-field-slide-image">
                                             <div class="field-content"><img typeof="foaf:Image"
@@ -687,16 +698,23 @@
         {title:"视频3", isplay:false, type:"video/mp4", url: "sites/default/files/video/index-3.mp4", image:"sites/default/files/video/index-3.jpg", dateTime:"2018-12-25 21:30"},
     ];
     (function(){
-        layui.use('laytpl', function() {
-            var laytpl = layui.laytpl;
+        layui.use('layer', function(){
+            var $ = layui.jquery, laytpl = layui.laytpl, carousel = layui.carousel;
             var data = {
                 "title":"video-image"
                 ,"list":video_list
             }
-            var getTpl = document.getElementById('video-image').innerHTML, view = document.getElementById('video-view');
+            var getTpl = $('#video-image').innerHTML, view = $('#video-view');
 
             laytpl(getTpl).render(data, function(html){
                 view.innerHTML = html;
+            });
+
+            //建造实例
+            var ins = carousel.render({
+                elem: '#flexslider-2'
+                ,width: '100%' //设置容器宽度
+                ,anim: 'fade' //切换动画方式
             });
         });
 
