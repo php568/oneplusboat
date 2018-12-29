@@ -300,6 +300,7 @@
         .video-js.vjs-playing .vjs-tech {pointer-events: auto;}
         .video-js .vjs-time-control{display:block;}
         .video-js .vjs-remaining-time{display: none;}
+        .video-image{ display: block; line-height: 0px; margin: 5px;}
         #index-video{width: 100%;min-height: 389px;}
     </style>
 </head>
@@ -563,24 +564,18 @@
                                 <div class="field-content">
                                     <div class="layui-row layui-col-space10">
                                         <div class="layui-col-md4">
-                                            <a id="video1" href="#" title="video1">
-                                                <img v-bind:src="[item.image]" width="120px" height="80px" border="0">
-                                                <div class="video_list_explain text_align_center">{{item.title}}</div>
-                                                <div class="video_list_date text_align_center">{{item.dateTime}}</div>
+                                            <a class="video-image" id="video1" href="#" title="" data-type="video/mp4" data-url="sites/default/files/video/index-1.mp4">
+                                                <img src="sites/default/files/video/index-1.jpg" width="120px" height="80px" border="0">
                                             </a>
                                         </div>
                                         <div class="layui-col-md4">
-                                            <a id="video1" href="#" title="video1">
-                                                <img v-bind:src="[item.image]" width="120px" height="80px" border="0">
-                                                <div class="video_list_explain text_align_center">{{item.title}}</div>
-                                                <div class="video_list_date text_align_center">{{item.dateTime}}</div>
+                                            <a class="video-image"  id="video2" href="#" title="" data-type="video/mp4" data-url="sites/default/files/video/index-2.mp4">
+                                                <img src="sites/default/files/video/index-2.jpg" width="120px" height="80px" border="0">
                                             </a>
                                         </div>
                                         <div class="layui-col-md4">
-                                            <a id="video1" href="#" title="video1">
-                                                <img v-bind:src="[item.image]" width="120px" height="80px" border="0">
-                                                <div class="video_list_explain text_align_center">{{item.title}}</div>
-                                                <div class="video_list_date text_align_center">{{item.dateTime}}</div>
+                                            <a class="video-image"  id="video3" href="#" title="" data-type="video/mp4" data-url="sites/default/files/video/index-3.mp4">
+                                                <img src="sites/default/files/video/index-3.jpg" width="120px" height="80px" border="0">
                                             </a>
                                         </div>
                                     </div>
@@ -718,14 +713,22 @@
 
             })
             this.on('ended',function(){
-                i++;
-                if(i >= video_list.length){
-                    i = 0;
-                }
-                var videoObj = video_list[i];
-                this.src({type: videoObj.type, src: videoObj.url});
-                this.play();
+//                i++;
+//                if(i >= video_list.length){
+//                    i = 0;
+//                }
+//                var videoObj = video_list[i];
+//                this.src({type: videoObj.type, src: videoObj.url});
+//                this.play();
             })
+        });
+
+        $(".video-image").click(function(e){
+            var url = $(e).attr('data-src');
+            var type = $(e).attr('data-type');
+            console.log(url);
+            player.src({type: type, src: url});
+            player.play();
         });
     })();
 </script>
