@@ -561,24 +561,7 @@
                                         </p>
                                     </video>
                                 </div>
-                                <div class="field-content">
-                                    <div class="layui-row layui-col-space10">
-                                        <div class="layui-col-md4">
-                                            <a class="video-image" id="video1" href="#" title="" data-type="video/mp4" data-url="sites/default/files/video/index-1.mp4">
-                                                <img src="sites/default/files/video/index-1.jpg" width="120px" height="80px" border="0">
-                                            </a>
-                                        </div>
-                                        <div class="layui-col-md4">
-                                            <a class="video-image"  id="video2" href="#" title="" data-type="video/mp4" data-url="sites/default/files/video/index-2.mp4">
-                                                <img src="sites/default/files/video/index-2.jpg" width="120px" height="80px" border="0">
-                                            </a>
-                                        </div>
-                                        <div class="layui-col-md4">
-                                            <a class="video-image"  id="video3" href="#" title="" data-type="video/mp4" data-url="sites/default/files/video/index-3.mp4">
-                                                <img src="sites/default/files/video/index-3.jpg" width="120px" height="80px" border="0">
-                                            </a>
-                                        </div>
-                                    </div>
+                                <div class="field-content" id="video-view">
                                 </div>
                             </div>
                         </div>
@@ -698,6 +681,18 @@
         {title:"视频3", isplay:false, type:"video/mp4", url: "sites/default/files/video/index-3.mp4", image:"sites/default/files/video/index-3.jpg", dateTime:"2018-12-25 21:30"},
     ];
     (function(){
+        layui.use('laytpl', function() {
+            var laytpl = layui.laytpl;
+            var data = {
+                "title":"video-image"
+                ,"list":video_list
+            }
+            var getTpl = document.getElementById('video-image').innerHTML, view = document.getElementById('video-view');
+
+            laytpl(getTpl).render(data, function(html){
+                view.innerHTML = html;
+            });
+        });
 
         var player = videojs("index-video", {
             "width":"100%",
@@ -723,7 +718,7 @@
             })
         });
 
-        $(".video-image").click(function(e){
+        jQuery(".video-image").click(function(e){
             var url = $(e).attr('data-src');
             var type = $(e).attr('data-type');
             console.log(url);
@@ -733,4 +728,43 @@
     })();
 </script>
 </body>
+<script id="video-image" type="text/html">
+    <h3>{{ d.title }}</h3>
+    <ul>
+        {{#  layui.each(d.list, function(index, item){ }}
+        <li>
+            <span>{{ item.modname }}</span>
+            <span>{{ item.alias }}：</span>
+            <span>{{ item.site || '' }}</span>
+        </li>
+        {{#  }); }}
+        {{#  if(d.list.length === 0){ }}
+        无数据
+        {{#  } }}
+    </ul>
+
+
+    <div class="layui-row layui-col-space10">
+        {{#  layui.each(d.list, function(index, item){ }}
+        <div class="layui-col-md4">
+            <a class="video-image" id="video1" href="#" title="" data-type="video/mp4" data-url="sites/default/files/video/index-1.mp4">
+                <img src="sites/default/files/video/index-1.jpg" width="120px" height="80px" border="0">
+            </a>
+        </div>
+        {{#  }); }}
+        {{#  if(d.list.length === 0){ }}
+            No Data
+        {{#  } }}
+        <div class="layui-col-md4">
+            <a class="video-image"  id="video2" href="#" title="" data-type="video/mp4" data-url="sites/default/files/video/index-2.mp4">
+                <img src="sites/default/files/video/index-2.jpg" width="120px" height="80px" border="0">
+            </a>
+        </div>
+        <div class="layui-col-md4">
+            <a class="video-image"  id="video3" href="#" title="" data-type="video/mp4" data-url="sites/default/files/video/index-3.mp4">
+                <img src="sites/default/files/video/index-3.jpg" width="120px" height="80px" border="0">
+            </a>
+        </div>
+    </div>
+</script>
 </html>
