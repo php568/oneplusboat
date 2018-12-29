@@ -301,6 +301,12 @@
         .video-js .vjs-time-control{display:block;}
         .video-js .vjs-remaining-time{display: none;}
         .video-image{ display: block; line-height: 0px; margin: 10px 5px 0px;}
+        .video-image.current{
+            -moz-box-shadow: 3px 3px 16px #333;
+            -webkit-box-shadow: 3px 3px 16px #333;
+            box-shadow: 3px 3px 16px #333;
+            outline: 0;
+        }
         #index-video{width: 100%;min-height: 389px;}
     </style>
 </head>
@@ -718,11 +724,13 @@
             })
         });
 
-        jQuery(".video-image").click(function(e){
-            var url = $(e).attr('data-src');
-            var type = $(e).attr('data-type');
-            console.log(url);
-            player.src({type: type, src: url});
+        jQuery(".video-image img").click(function(){
+            jQuery(this).removeClass('current');
+            jQuery(this).addClass('current');
+            var src = jQuery(this).attr('data-src');
+            var type = jQuery(this).attr('data-type');
+console.log(src);
+            player.src({type: type, src: src});
             player.play();
         });
     })();
@@ -732,8 +740,8 @@
     <div class="layui-row layui-col-space10">
         {{#  layui.each(d.list, function(index, item){ }}
         <div class="layui-col-md4">
-            <a class="video-image" id="video{{index}}" href="javascript:;" title="" data-type="{{ item.type }}" data-url="{{ item.url }}">
-                <img src="{{ item.image }}" width="120px" height="80px" border="0">
+            <a class="video-image" id="video{{index}}" href="javascript:;" title="" >
+                <img src="{{ item.image }}" data-type="{{ item.type }}" data-src="{{ item.url }}" width="120px" height="80px" border="0">
             </a>
         </div>
         {{#  }); }}
