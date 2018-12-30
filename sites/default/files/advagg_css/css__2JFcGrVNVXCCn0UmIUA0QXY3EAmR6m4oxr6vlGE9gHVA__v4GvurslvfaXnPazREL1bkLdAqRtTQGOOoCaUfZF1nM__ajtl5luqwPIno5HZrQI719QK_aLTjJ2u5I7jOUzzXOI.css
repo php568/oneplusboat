@@ -2030,3 +2030,6 @@ div.checker{
 .node-blog .submitted{
     margin: 1.5em 0;
 }
+.node-blog .field-items .field-item p{
+    margin: 0 0 1.5em;
+}
