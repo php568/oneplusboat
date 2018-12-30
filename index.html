@@ -594,6 +594,12 @@
         $('.layui-carousel-arrow').html('');
         $('.front #content').delay(600).animate({'top': '40px'}, 1200);
         $('.front .sidebars .sidebar').delay(600).animate({'top': '43px'}, 1200);
+        $('.tb-megamenu ul.nav li.mega').mouseenter(function(){
+            $(this).addClass('open');
+        });
+        $('.tb-megamenu ul.nav li.mega').mouseleave(function(){
+            $(this).removeClass('open');
+        });
     })();
 </script>
 </body>
