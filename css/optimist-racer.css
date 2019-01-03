@@ -1,0 +1,72 @@
+body {
+    background-color: #FFFFFF !important;
+    background-image: url('http://118.25.5.174:8001/sites/default/files/backgroundimage-racer.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center bottom !important;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://118.25.5.174:8001/sites/default/files/backgroundimage-racer.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://118.25.5.174:8001/sites/default/files/backgroundimage-racer.jpg', sizingMethod='scale')";
+}
+.tb-megamenu.animate .mega > .mega-dropdown-menu, .tb-megamenu.animate.slide .mega > .mega-dropdown-menu > div {
+    transition-delay: 200ms;
+    -webkit-transition-delay: 200ms;
+    -ms-transition-delay: 200ms;
+    -o-transition-delay: 200ms;
+    transition-duration: 400ms;
+    -webkit-transition-duration: 400ms;
+    -ms-transition-duration: 400ms;
+    -o-transition-duration: 400ms;
+}
+.front #page{min-height:1500px;}
+/*.front .view-homepage{background-color: rgba(240,240,240,0); }*/
+.front .region-bottom{display: block;}
+.tb-megamenu { background-color: #58585A;  }
+.tb-megamenu .nav>li>a { border-right: 1px solid #D2D3D5; }
+.view-homepage .views-field-body{ background-color: #818286; }
+.view-homepage .views-field-body p { text-transform: none; }
+.tb-megamenu-nav li.level-1:nth-child(2) a.dropdown-toggle { background-color: #ffffff; }
+.tb-megamenu-nav li.level-1:nth-child(2) a.dropdown-toggle:hover,
+.tb-megamenu-nav li.level-1:nth-child(2) a.dropdown-toggle:focus,
+.tb-megamenu-nav li.level-1.open:nth-child(2) a.dropdown-toggle,
+.tb-megamenu-nav li.level-1:nth-child(2) a.dropdown-toggle { background-color: #D2D3D5 !important; color: #000000 !important; }
+.tb-megamenu .dropdown-menu a { white-space: nowrap; }
+
+#block-views-homepage-products-block .views-field-uc-product-image{line-height: 0px;}
+#block-views-homepage-products-block .views-field-uc-product-image .field-content{line-height: 0px;}
+#block-views-table-block {background-color: white;padding:0; margin-top: 320px;}
+#block-views-table-block ul{margin:0;padding:0;list-style:none;}
+#block-views-table-block .table{display:table;border-collapse:collapse;border:1px solid #8C8D8F;}
+#block-views-table-block .table-caption{display:table-caption;margin:0;padding:0;font-size:16px;}
+#block-views-table-block .table-column-group{display:table-column-group;}
+#block-views-table-block .table-column{display:table-column;}
+#block-views-table-block .table-column1{display:table-column;width:41%;}
+#block-views-table-block .table-row-group{display:table-row-group;}
+#block-views-table-block .table-row{display:table-row;}
+#block-views-table-block .table-row-group .table-row:hover,.table-footer-group .table-row:hover{background:#f6f6f6;}
+#block-views-table-block .table-cell{display:table-cell;padding:0 5px;border:1px solid #8C8D8F;color:#818284;}
+#block-views-table-block .table-cell1{width:41%;}
+#block-views-table-block .table-header-group{display:table-header-group;background:#eee;font-weight:bold;}
+#block-views-table-block .table-footer-group{display:table-footer-group;}
+#block-block-1{margin: 10px auto;color:#fff;}
+#block-block-11{width: 100%;}
+#block-block-11 p{margin:0;}
+#block-block-11 .block-title{background-color: #818286; padding: 0 0 0 15px;}
+#block-bean-boat-repair{ padding:0px 0 0; }
+#block-bean-boat-repair .block-title{/*background-color: #818286;*/ padding: 0 0 0 15px;}
+#block-bean-boat-repair .field-item{max-width: 120px;float: left;margin-right: 1px;margin-left: 1px;margin-top: 1px;margin-bottom: 1px;line-height: 0px;}
+
+.layui-carousel-arrow[lay-type=sub]{
+    background: url(http://118.25.5.174:8001/sites/all/themes/racingdinghies/images/left-arrow.png) no-repeat;
+    width: 22px !important;
+    height: 72px !important;
+}
+.layui-carousel-arrow[lay-type=add]{
+    background: url(http://118.25.5.174:8001/sites/all/themes/racingdinghies/images/right-arrow.png) no-repeat;
+    width: 22px !important;
+    height: 72px !important;
+}
+.layui-carousel-ind ul{ background-color: rgba(0,0,0,0); border-radius: 0px;}
