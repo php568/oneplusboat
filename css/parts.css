@@ -42,14 +42,14 @@ body {
 #block-views-table-block .table-caption{display:table-caption;margin:0;padding:0;font-size:16px;}
 #block-views-table-block .table-column-group{display:table-column-group;}
 #block-views-table-block .table-column{display:table-column;}
-#block-views-table-block .table-column1{display:table-column;width:41%;}
+#block-views-table-block .table-column1{display:table-column;width:52%;}
 #block-views-table-block .table-row-group{display:table-row-group;}
 #block-views-table-block .table-row{display:table-row;}
 #block-views-table-block .table-row-group .table-row:hover,.table-footer-group .table-row:hover{background:#f6f6f6;}
 #block-views-table-block .table-cell{display:table-cell;padding:0 5px;border:1px solid #8C8D8F;color:#818284;}
 #block-views-table-block .table-cell1{width:41%;}
 #block-views-table-block .table-header-group{display:table-header-group;background:#eee;font-weight:bold;}
-#block-views-table-block .table-footer-group{display:table-footer-group;}
+#block-views-table-block .table-footer-group{display:table-footer-group;display:none;}
 #block-block-1{margin: 10px auto;color:#fff;}
 #block-block-11{width: 100%;}
 #block-block-11 p{margin:0;}
