@@ -69,3 +69,5 @@ body {
     height: 72px !important;
 }
 .layui-carousel-ind ul{ background-color: rgba(0,0,0,0); border-radius: 0px;}
+.layui-fluid {padding: 0px;}
+.layui-fluid .layui-row{background-color: #fff;}
