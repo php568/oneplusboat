@@ -446,8 +446,8 @@
             "autoplay":true,
             "controls":true,
             "sources":[{
-                src: video_list[i].url,
-                type: video_list[i].type
+                src: video_list[i-1].url,
+                type: video_list[i-1].type
             }],
         }, function(){
             this.on('loadeddata',function(){
@@ -456,7 +456,7 @@
             this.on('ended',function(){
                 i++;
                 if(i >= video_list.length){
-                    i = 0;
+                    i = 1;
                 }
                 var videoObj = video_list[i];
                 this.src({type: videoObj.type, src: videoObj.url});
