@@ -59,3 +59,4 @@ body {
 #block-bean-boat-charter{ padding:0px 0 0; }
 #block-bean-boat-charter .block-title{background-color: #818286; padding: 0 0 0 15px;}
 #block-bean-boat-charter .field-item img{ width:100%; height:100%; }
+.node-blog .field-items .field-item p{margin:0;}
