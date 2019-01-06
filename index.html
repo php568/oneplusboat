@@ -408,10 +408,13 @@
     </div>
 </div>
 
+<script charset="utf-8" src="http://118.25.5.174:8001/layui/layui.all.js"></script>
+<script>
+  window.HELP_IMPROVE_VIDEOJS = false;
+  jQuery = layui.jquery
+</script>
 <script charset="utf-8" src="http://118.25.5.174:8001/videojs/video.js"></script>
 <script charset="utf-8" src="http://118.25.5.174:8001/lazyload/jquery.lazyload.min.js"></script>
-<script charset="utf-8" src="http://118.25.5.174:8001/layui/layui.all.js"></script>
-<script>window.HELP_IMPROVE_VIDEOJS = false;</script>
 <script id="video-image" type="text/html">
     <ul class="layui-row layui-col-space10">
         {{#  layui.each(d.list, function(index, item){ }}
@@ -427,9 +430,9 @@
     </ul>
 </script>
 <script>
+    var jQuery = layui.jquery
     (function(){
-        $("img").lazyload({ threshold : 200 });
-
+        var $ = layui.jquery, laytpl = layui.laytpl, carousel = layui.carousel;
         var i = 0;
         var video_list = [
             {title:"视频1", isplay:false, type:"video/mp4", url: "sites/default/files/video/index-1.mp4", image:"sites/default/files/video/index-1.jpg", dateTime:"2018-12-25 21:30"},
@@ -441,8 +444,9 @@
             "title":"video-image",
             "list":video_list
         }
-        var $ = layui.jquery, laytpl = layui.laytpl, carousel = layui.carousel;
 
+        $("img").lazyload({ threshold : 200 });
+        
         var player = videojs("index-video", {
             "width":"100%",
             "poster":"",
