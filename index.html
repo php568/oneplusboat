@@ -472,6 +472,16 @@
         laytpl(getTpl).render(data, function(html){
             view.html(html);
             $("#video0 img").addClass('current');
+
+
+            $('#video-view .video-a').mouseenter(function(){
+                $("#video-view .but_left").delay(600).animate({'opacity': 1}, 1200);
+                $("#video-view .but_right").delay(600).animate({'opacity': 1}, 1200);
+            });
+            $('#video-view .video-a').mouseleave(function(){
+                $("#video-view .but_left").delay(600).animate({'opacity': 0}, 1200);
+                $("#video-view .but_right").delay(600).animate({'opacity': 0}, 1200);
+            });
         });
 
         $(".video-a img").bind('click', function(){
@@ -500,14 +510,6 @@
         });
         $('.tb-megamenu ul.nav li.mega').mouseleave(function(){
             $(this).removeClass('open');
-        });
-        $('#video-view .video-a').mouseenter(function(){
-            $("#video-view .but_left").delay(600).animate({'opacity': 1}, 1200);
-            $("#video-view .but_right").delay(600).animate({'opacity': 1}, 1200);
-        });
-        $('#video-view .video-a').mouseleave(function(){
-            $("#video-view .but_left").delay(600).animate({'opacity': 0}, 1200);
-            $("#video-view .but_right").delay(600).animate({'opacity': 0}, 1200);
         });
     })();
 </script>
