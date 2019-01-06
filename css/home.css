@@ -92,5 +92,6 @@ body {
 
 #video-view{overflow: hidden; height: 135px;}
 li.layui-col-md4{width: 230px;}
+li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
 #intro-1 .but_left{opacity: 0;width: 22px;height: 72px;position: absolute;bottom: 30px;left: 0px;display: inline-block;-webkit-transition-duration: .3s; transition-duration: .3s;cursor: pointer;}
 #intro-1 .but_right{opacity: 0;width: 22px; height: 72px;position: absolute;bottom: 30px;right: 0px;display: inline-block;-webkit-transition-duration: .3s; transition-duration: .3s;cursor: pointer;}
