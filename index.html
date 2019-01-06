@@ -494,33 +494,34 @@
 
             var _index5=0;
             var len = $("#video-view ul li").length;
+            var ul_html = $("#video-view ul").html();
             $("#intro-1 .but_left").bind('click', function(){
                 _index5++;
-                if(_index5+5>len){
-                    $("#video-view ul").stop().append($("#video-view ul").html());
-                }
+                // if(_index5+5>len){
+                //     $("#video-view ul").stop().append(ul_html);
+                // }
                 $("#video-view ul").stop().animate({left:-_index5*230},1000);
             });
             $("#intro-1 .but_right").bind('click', function(){
-                if(_index5==0){
-                    $("#video-view ul").prepend($("#video-view ul").html());
-                    $("#video-view ul").css("left","-1380px");
-                    _index5=6
-                }
+                // if(_index5==0){
+                //     $("#video-view ul").prepend(ul_html);
+                //     $("#video-view ul").css("left","-1380px");
+                //     _index5=6
+                // }
                 _index5--;
                 $("#video-view ul").stop().animate({left:-_index5*230},1000);
             });
-        });
 
-        $(".video-a img").bind('click', function(){
-            $(".video-img").removeClass('current');
-            $(this).addClass('current');
-            var src = $(this).attr('data-src');
-            var type = $(this).attr('data-type');
-            player.src({type: type, src: src});
-            player.play();
+            $(".video-a img").bind('click', function(){
+                $(".video-img").removeClass('current');
+                $(this).addClass('current');
+                var src = $(this).attr('data-src');
+                var type = $(this).attr('data-type');
+                player.src({type: type, src: src});
+                player.play();
 
-            i = $(this).attr('border');
+                i = $(this).attr('border');
+            });
         });
 
         //建造实例
