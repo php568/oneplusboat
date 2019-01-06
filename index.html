@@ -427,7 +427,7 @@
 </script>
 <script>
     (function(){
-        var i = 0;
+        var i = 1;
         var video_list = [
             {title:"视频1", isplay:false, type:"video/mp4", url: "sites/default/files/video/index-1.mp4", image:"sites/default/files/video/index-1.jpg", dateTime:"2018-12-25 21:30"},
             {title:"视频2", isplay:false, type:"video/mp4", url: "sites/default/files/video/index-2.mp4", image:"sites/default/files/video/index-2.jpg", dateTime:"2018-12-25 21:30"},
@@ -458,16 +458,20 @@
 
             })
             this.on('ended',function(){
-               i++;
-               if(i >= video_list.length){
-                   i = 0;
-               }
-               var videoObj = video_list[i];
-               this.src({type: videoObj.type, src: videoObj.url});
-               this.play();
+                i++;
+                if(i >= video_list.length){
+                    i = 0;
+                }
+                var videoObj = video_list[i];
+                this.src({type: videoObj.type, src: videoObj.url});
+                this.play();
 
                 $(".video-img").removeClass('current');
                 $("#video-view ul li:nth-child("+i+") img").addClass('current');
+
+                var last = $("#video-view ul li:last-child").clone(true);
+                $("#video-view ul").stop().prepend(last);
+                $("#video-view ul li:last-child").remove();
             })
         });
 
