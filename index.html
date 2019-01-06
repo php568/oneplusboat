@@ -414,7 +414,7 @@
 <script id="video-image" type="text/html">
     <ul class="layui-row layui-col-space10">
         {{#  layui.each(d.list, function(index, item){ }}
-        <li class="layui-col-md4">
+        <li class="layui-col-md4 video_li{{index}}">
             <a class="video-a" id="video{{index}}" href="javascript:;" title="" >
                 <img class="video-img" src="{{ item.image }}" data-type="{{ item.type }}" data-src="{{ item.url }}" width="120px" height="80px" border="{{index}}">
             </a>
@@ -432,10 +432,6 @@
             {title:"视频1", isplay:false, type:"video/mp4", url: "sites/default/files/video/index-1.mp4", image:"sites/default/files/video/index-1.jpg", dateTime:"2018-12-25 21:30"},
             {title:"视频2", isplay:false, type:"video/mp4", url: "sites/default/files/video/index-2.mp4", image:"sites/default/files/video/index-2.jpg", dateTime:"2018-12-25 21:30"},
             {title:"视频3", isplay:false, type:"video/mp4", url: "sites/default/files/video/index-3.mp4", image:"sites/default/files/video/index-3.jpg", dateTime:"2018-12-25 21:30"},
-            {title:"视频4", isplay:false, type:"video/mp4", url: "sites/default/files/video/index-1.mp4", image:"sites/default/files/video/index-1.jpg", dateTime:"2018-12-25 21:30"},
-            {title:"视频5", isplay:false, type:"video/mp4", url: "sites/default/files/video/index-2.mp4", image:"sites/default/files/video/index-2.jpg", dateTime:"2018-12-25 21:30"},
-            {title:"视频6", isplay:false, type:"video/mp4", url: "sites/default/files/video/index-3.mp4", image:"sites/default/files/video/index-3.jpg", dateTime:"2018-12-25 21:30"},
-
         ];
 
         var data = {
@@ -468,11 +464,8 @@
 
                 $(".video-img").removeClass('current');
                 $("#video"+i+" img").addClass('current');
-                // $("#video-view ul li:nth-child("+i+") img").addClass('current');
 
-                // var last = $("#video-view ul li:last-child").clone(true);
-                // $("#video-view ul").stop().prepend(last);
-                // $("#video-view ul li:last-child").remove();
+                $("#intro-1 .but_right").trigger('click');
             })
         });
 
@@ -496,18 +489,18 @@
             });
 
             $("#intro-1 .but_left").bind('click', function(){
-                var first = $("#video-view ul li:first-child").clone(true);
-                $("#video-view ul").stop().append(first);
-                $("#video-view ul li:first-child").remove();
-            });
-            $("#intro-1 .but_right").bind('click', function(){
                 var last = $("#video-view ul li:last-child").clone(true);
                 $("#video-view ul").stop().prepend(last);
                 $("#video-view ul li:last-child").remove();
             });
+            $("#intro-1 .but_right").bind('click', function(){
+                var first = $("#video-view ul li:first-child").clone(true);
+                $("#video-view ul").stop().append(first);
+                $("#video-view ul li:first-child").remove();
+            });
 
             $(".video-a img").bind('click', function(){
-                var tmp_i = i;
+
                 $(".video-img").removeClass('current');
                 $(this).addClass('current');
                 var src = $(this).attr('data-src');
@@ -516,7 +509,7 @@
                 player.play();
 
                 i = $(this).attr('border');
-                //
+
                 // if(i==(video_list.length-1)){
                 //     $("#intro-1 .but_right").trigger('click');
                 // }else if(i==1){
