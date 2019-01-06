@@ -475,10 +475,12 @@
 
 
             $('#video-view .video-a').mouseenter(function(){
+                console.log(123);
                 $("#video-view .but_left").delay(600).animate({'opacity': 1}, 1200);
                 $("#video-view .but_right").delay(600).animate({'opacity': 1}, 1200);
             });
             $('#video-view .video-a').mouseleave(function(){
+                console.log(456);
                 $("#video-view .but_left").delay(600).animate({'opacity': 0}, 1200);
                 $("#video-view .but_right").delay(600).animate({'opacity': 0}, 1200);
             });
