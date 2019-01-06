@@ -474,13 +474,13 @@
             $("#video0 img").addClass('current');
 
 
-            $('#video-view .video-a').mouseenter(function(){
+            $('#intro-1').mouseenter(function(){
                 if(!$(this).is(":animated")){
                     $("#intro-1 .but_left").stop(true,false).delay(200).animate({'opacity': 1});
                     $("#intro-1 .but_right").stop(true,false).delay(200).animate({'opacity': 1});
                 }
             });
-            $('#video-view li').mouseleave(function(){
+            $('#intro-1').mouseleave(function(){
                 if(!$(this).is(":animated")){
                     $("#intro-1 .but_left").stop(true,false).delay(200).animate({'opacity': 0});
                     $("#intro-1 .but_right").stop(true,false).delay(200).animate({'opacity': 0});
