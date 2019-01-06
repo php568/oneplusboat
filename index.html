@@ -468,7 +468,7 @@
                this.play();
 
                 $(".video-img").removeClass('current');
-                $("#video-view ul li:first-child img").addClass('current');
+                $("#video-view ul li:nth-child("+i+") img").addClass('current');
             })
         });
 
@@ -492,9 +492,6 @@
                 }
             });
 
-            var _index5=0;
-            var len = $("#video-view ul li").length;
-            var ul_html = $("#video-view ul").html();
             $("#intro-1 .but_left").bind('click', function(){
                 var first = $("#video-view ul li:first-child").clone(true);
                 $("#video-view ul").stop().append(first);
