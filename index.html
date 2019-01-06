@@ -446,8 +446,8 @@
             "autoplay":true,
             "controls":true,
             "sources":[{
-                src: video_list[i+1].url,
-                type: video_list[i+1].type
+                src: video_list[i].url,
+                type: video_list[i].type
             }],
         }, function(){
             this.on('loadeddata',function(){
@@ -465,7 +465,7 @@
                 $(".video-img").removeClass('current');
                 $("#video"+i+" img").addClass('current');
 
-                $("#intro-1 .but_right").trigger('click');
+                // $("#intro-1 .but_right").trigger('click');
             })
         });
 
