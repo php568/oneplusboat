@@ -89,3 +89,9 @@ body {
     height: 72px !important;
 }
 .layui-carousel-ind ul{ background-color: rgba(0,0,0,0); border-radius: 0px;}
+
+#video-view{overflow: hidden; position: relative; height: 135px;}
+ul.layui-col-space10{width:500%; position: absolute;}
+li.layui-col-md4{width: 230px;}
+#intro-1 .but_left{opacity: 0;width: 22px;height: 72px;position: absolute;bottom: 30px;left: 0px;display: inline-block;-webkit-transition-duration: .3s; transition-duration: .3s;cursor: pointer;}
+#intro-1 .but_right{opacity: 0;width: 22px; height: 72px;position: absolute;bottom: 30px;right: 0px;display: inline-block;-webkit-transition-duration: .3s; transition-duration: .3s;cursor: pointer;}

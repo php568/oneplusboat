@@ -304,6 +304,8 @@
                                 </div>
                                 <div class="field-content" id="video-view">
                                 </div>
+                                <div class="but_left"><img src="sites/all/themes/racingdinghies/images/left-arrow.png" /></div>
+                                <div class="but_right"><img src="sites/all/themes/racingdinghies/images/right-arrow.png" /></div>
                             </div>
                         </div>
 
@@ -410,18 +412,18 @@
 <script charset="utf-8" src="http://118.25.5.174:8001/layui/layui.all.js"></script>
 <script>window.HELP_IMPROVE_VIDEOJS = false;</script>
 <script id="video-image" type="text/html">
-    <div class="layui-row layui-col-space10">
+    <ul class="layui-row layui-col-space10">
         {{#  layui.each(d.list, function(index, item){ }}
-        <div class="layui-col-md4">
+        <li class="layui-col-md4">
             <a class="video-a" id="video{{index}}" href="javascript:;" title="" >
                 <img class="video-img" src="{{ item.image }}" data-type="{{ item.type }}" data-src="{{ item.url }}" width="120px" height="80px" border="{{index}}">
             </a>
-        </div>
+        </li>
         {{#  }); }}
         {{#  if(d.list.length === 0){ }}
         No Data
         {{#  } }}
-    </div>
+    </ul>
 </script>
 <script>
     (function(){
@@ -498,6 +500,14 @@
         });
         $('.tb-megamenu ul.nav li.mega').mouseleave(function(){
             $(this).removeClass('open');
+        });
+        $('#video-view .video-a').mouseenter(function(){
+            $("#video-view .but_left").delay(600).animate({'opacity': 1}, 1200);
+            $("#video-view .but_right").delay(600).animate({'opacity': 1}, 1200);
+        });
+        $('#video-view .video-a').mouseleave(function(){
+            $("#video-view .but_left").delay(600).animate({'opacity': 0}, 1200);
+            $("#video-view .but_right").delay(600).animate({'opacity': 0}, 1200);
         });
     })();
 </script>
