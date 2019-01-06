@@ -408,19 +408,16 @@
     </div>
 </div>
 
-<script charset="utf-8" src="http://118.25.5.174:8001/layui/layui.all.js"></script>
-<script>
-  window.HELP_IMPROVE_VIDEOJS = false;
-  jQuery = layui.jquery
-</script>
 <script charset="utf-8" src="http://118.25.5.174:8001/videojs/video.js"></script>
+<script charset="utf-8" src="http://118.25.5.174:8001/layui/layui.all.js"></script>
+<script>window.HELP_IMPROVE_VIDEOJS = false; jQuery = layui.jquery</script>
 <script charset="utf-8" src="http://118.25.5.174:8001/lazyload/jquery.lazyload.min.js"></script>
 <script id="video-image" type="text/html">
     <ul class="layui-row layui-col-space10">
         {{#  layui.each(d.list, function(index, item){ }}
         <li class="layui-col-md4 video_li{{index}}">
             <a class="video-a" id="video{{index}}" href="javascript:;" title="" >
-                <img class="video-img" src="{{ item.image }}" data-type="{{ item.type }}" data-src="{{ item.url }}"  data-original="{{ item.url }}"  width="120px" height="80px" border="{{index}}">
+                <img class="video-img" src="{{ item.image }}" data-type="{{ item.type }}" data-src="{{ item.url }}"  width="120px" height="80px" border="{{index}}">
             </a>
         </li>
         {{#  }); }}
