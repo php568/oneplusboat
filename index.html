@@ -475,12 +475,16 @@
 
 
             $('#video-view .video-a').mouseenter(function(){
-                $("#intro-1 .but_left").stop().delay(200).animate({'opacity': 1});
-                $("#intro-1 .but_right").stop().delay(200).animate({'opacity': 1});
+                if(!$(this).is(":animated")){
+                    $("#intro-1 .but_left").stop(true,false).delay(200).animate({'opacity': 1});
+                    $("#intro-1 .but_right").stop(true,false).delay(200).animate({'opacity': 1});
+                }
             });
             $('#video-view li').mouseleave(function(){
-                $("#intro-1 .but_left").stop().delay(200).animate({'opacity': 0});
-                $("#intro-1 .but_right").stop().delay(200).animate({'opacity': 0});
+                if(!$(this).is(":animated")){
+                    $("#intro-1 .but_left").stop(true,false).delay(200).animate({'opacity': 0});
+                    $("#intro-1 .but_right").stop(true,false).delay(200).animate({'opacity': 0});
+                }
             });
         });
 
