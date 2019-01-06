@@ -1,4 +1,3 @@
-
 (function(){
     var $ = layui.jquery, laytpl = layui.laytpl, carousel = layui.carousel;
     var i = 0;
