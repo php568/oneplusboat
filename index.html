@@ -498,13 +498,13 @@
             $("#intro-1 .but_left").bind('click', function(){
                 var first = $("#video-view ul li:first-child").clone();
                 $("#video-view ul").stop().append(first);
-                $("#video-view ul").stop().animate({left:230},1000);
+                // $("#video-view ul").stop().animate({left:0},1000);
                 $("#video-view ul li:first-child").remove();
             });
             $("#intro-1 .but_right").bind('click', function(){
                 var last = $("#video-view ul li:last-child").clone();
                 $("#video-view ul").prepend(last);
-                $("#video-view ul").stop().animate({right:230},1000);
+                // $("#video-view ul").stop().animate({left:0},1000);
                 $("#video-view ul li:last-child").remove();
             });
 
