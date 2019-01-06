@@ -496,12 +496,12 @@
             var len = $("#video-view ul li").length;
             var ul_html = $("#video-view ul").html();
             $("#intro-1 .but_left").bind('click', function(){
-                var first = $("#video-view ul li:first-child").clone();
+                var first = $("#video-view ul li:first-child").clone(true);
                 $("#video-view ul").stop().append(first);
                 $("#video-view ul li:first-child").remove();
             });
             $("#intro-1 .but_right").bind('click', function(){
-                var last = $("#video-view ul li:last-child").clone();
+                var last = $("#video-view ul li:last-child").clone(true);
                 $("#video-view ul").stop().prepend(last);
                 $("#video-view ul li:last-child").remove();
             });
