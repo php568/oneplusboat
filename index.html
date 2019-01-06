@@ -507,6 +507,7 @@
             });
 
             $(".video-a img").bind('click', function(){
+                var tmp_i = i;
                 $(".video-img").removeClass('current');
                 $(this).addClass('current');
                 var src = $(this).attr('data-src');
@@ -515,6 +516,16 @@
                 player.play();
 
                 i = $(this).attr('border');
+                
+                if(i==(video_list.length-1)){
+                    $("#intro-1 .but_right").trigger('click');
+                }else if(i==1){
+                    $("#intro-1 .but_left").trigger('click');
+                }else if(i>tmp_i){
+                    $("#intro-1 .but_left").trigger('click');
+                }else if(i<tmp_i){
+                    $("#intro-1 .but_right").trigger('click');
+                }
             });
         });
 
