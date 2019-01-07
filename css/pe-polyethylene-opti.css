@@ -23,6 +23,7 @@ body {
 }
 .tb-megamenu .dropdown-menu{ min-width:140px; }
 .tb-megamenu .mega > .mega-dropdown-menu{ min-width:140px; }
+.tb-megamenu .block{margin-bottom:0px}
 .front #page{min-height:1940px;}
 .front .region-bottom{display: block;}
 .tb-megamenu { background-color: #58585A;  }
