@@ -33,4 +33,5 @@ body{
 .tb-megamenu-nav li.level-1:nth-child(6) a.dropdown-toggle { background-color: #D2D3D5 !important; color: #000000 !important; }
 .views-field-uc-product-image{line-height: normal;}
 .tb-megamenu .dropdown-menu a { white-space: nowrap; }
+.tb-megamenu .tb-megamenu-item tb-megamenu-column{width:100%;}
 #block-block-1{margin: 10px auto;color:#fff;}
