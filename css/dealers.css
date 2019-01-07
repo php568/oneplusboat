@@ -21,6 +21,8 @@ body{
     -ms-transition-duration: 400ms;
     -o-transition-duration: 400ms;
 }
+.tb-megamenu .dropdown-menu{ min-width:140px; }
+.tb-megamenu .mega > .mega-dropdown-menu{ min-width:140px; }
 .front #page{min-height:1500px;}
 /*.front .view-homepage{background-color: rgba(240,240,240,0); }*/
 .front .region-bottom{display: block;}
