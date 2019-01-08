@@ -11,6 +11,7 @@ body {
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://118.25.5.174:8001/sites/default/files/backgroundimage-trainer.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://118.25.5.174:8001/sites/default/files/backgroundimage-trainer.jpg', sizingMethod='scale')";
 }
+#block-tb-megamenu-main-menu .language{text-align: right;line-height: 2em; height: 2em;}
 .tb-megamenu.animate .mega > .mega-dropdown-menu, .tb-megamenu.animate.slide .mega > .mega-dropdown-menu > div {
     transition-delay: 200ms;
     -webkit-transition-delay: 200ms;
