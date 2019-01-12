@@ -77,3 +77,4 @@ body {
 .layui-carousel-ind ul{ background-color: rgba(0,0,0,0); border-radius: 0px;}
 .layui-fluid {padding: 0px;}
 .layui-fluid .layui-row{background-color: #fff;}
+.layui-col-sm2 .grid-info{ display: inline-block; width: 100%; color: black; text-align: center;}
