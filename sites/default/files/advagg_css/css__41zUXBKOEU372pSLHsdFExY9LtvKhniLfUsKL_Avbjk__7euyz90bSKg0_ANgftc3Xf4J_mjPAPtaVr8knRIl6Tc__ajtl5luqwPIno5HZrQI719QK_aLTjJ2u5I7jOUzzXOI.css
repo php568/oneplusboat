@@ -18,12 +18,12 @@
     zoom:1
 }
 html.js input.form-autocomplete{
-    background-image:url(http://118.25.5.174:8001/misc/throbber-inactive.png);
+    background-image:url(http://47.91.86.81/misc/throbber-inactive.png);
     background-position:100% center;
     background-repeat:no-repeat
 }
 html.js input.throbbing{
-    background-image:url(http://118.25.5.174:8001/misc/throbber-active.gif);
+    background-image:url(http://47.91.86.81/misc/throbber-active.gif);
     background-position:100% center
 }
 html.js fieldset.collapsed{
@@ -50,7 +50,7 @@ fieldset.collapsible .fieldset-legend{
     box-sizing:border-box
 }
 .resizable-textarea .grippie{
-    background:#eee url(http://118.25.5.174:8001/misc/grippie.png) no-repeat center 2px;
+    background:#eee url(http://47.91.86.81/misc/grippie.png) no-repeat center 2px;
     border:1px solid #ddd;
     border-top-width:0;
     cursor:s-resize;
@@ -72,7 +72,7 @@ a.tabledrag-handle:hover{
     text-decoration:none
 }
 a.tabledrag-handle .handle{
-    background:url(http://118.25.5.174:8001/misc/draggable.png) no-repeat 6px 9px;
+    background:url(http://47.91.86.81/misc/draggable.png) no-repeat 6px 9px;
     height:13px;
     margin:-.4em .5em;
     padding:.42em .5em;
@@ -89,13 +89,13 @@ div.indentation{
     width:20px
 }
 div.tree-child{
-    background:url(http://118.25.5.174:8001/misc/tree.png) no-repeat 11px center
+    background:url(http://47.91.86.81/misc/tree.png) no-repeat 11px center
 }
 div.tree-child-last{
-    background:url(http://118.25.5.174:8001/misc/tree-bottom.png) no-repeat 11px center
+    background:url(http://47.91.86.81/misc/tree-bottom.png) no-repeat 11px center
 }
 div.tree-child-horizontal{
-    background:url(http://118.25.5.174:8001/misc/tree.png) no-repeat -11px center
+    background:url(http://47.91.86.81/misc/tree.png) no-repeat -11px center
 }
 .tabledrag-toggle-weight-wrapper{
     text-align:right
@@ -120,7 +120,7 @@ table.sticky-header{
     display:inline-block
 }
 .ajax-progress .throbber{
-    background:transparent url(http://118.25.5.174:8001/misc/throbber-active.gif) no-repeat 0px center;
+    background:transparent url(http://47.91.86.81/misc/throbber-active.gif) no-repeat 0px center;
     float:left;
     height:15px;
     margin:2px;
@@ -528,7 +528,7 @@ td.revision-current{
 #order-pane-print_button{
     border:1px solid #bbb;
     padding:.5em .5em .5em 2em;
-    background:url(http://118.25.5.174:8001/sites/all/modules/ubercart/uc_store/images/print.gif) no-repeat .5em 50%
+    background:url(http://47.91.86.81/sites/all/modules/ubercart/uc_store/images/print.gif) no-repeat .5em 50%
 }
 .product-image{
     clear:right;
@@ -621,24 +621,24 @@ td.revision-current{
     width:auto
 }
 .ubercart-throbber{
-    background-image:url(http://118.25.5.174:8001/sites/all/modules/ubercart/uc_store/images/throbber.gif);
+    background-image:url(http://47.91.86.81/sites/all/modules/ubercart/uc_store/images/throbber.gif);
     background-position:100% -20px;
     background-repeat:no-repeat
 }
 .path-admin-store-orders span.icon{
-    background:transparent url(http://118.25.5.174:8001/sites/all/modules/ubercart/uc_store/images/menu_orders.gif) no-repeat !important
+    background:transparent url(http://47.91.86.81/sites/all/modules/ubercart/uc_store/images/menu_orders.gif) no-repeat !important
 }
 .path-admin-store-customers span.icon{
-    background:transparent url(http://118.25.5.174:8001/sites/all/modules/ubercart/uc_store/images/menu_customers.gif) no-repeat !important
+    background:transparent url(http://47.91.86.81/sites/all/modules/ubercart/uc_store/images/menu_customers.gif) no-repeat !important
 }
 .path-admin-store-products span.icon{
-    background:transparent url(http://118.25.5.174:8001/sites/all/modules/ubercart/uc_store/images/menu_products.gif) no-repeat !important
+    background:transparent url(http://47.91.86.81/sites/all/modules/ubercart/uc_store/images/menu_products.gif) no-repeat !important
 }
 .path-admin-store-settings span.icon{
-    background:transparent url(http://118.25.5.174:8001/sites/all/modules/ubercart/uc_store/images/menu_store_settings.gif) no-repeat !important
+    background:transparent url(http://47.91.86.81/sites/all/modules/ubercart/uc_store/images/menu_store_settings.gif) no-repeat !important
 }
 .path-admin-store-reports span.icon{
-    background:transparent url(http://118.25.5.174:8001/sites/all/modules/ubercart/uc_store/images/menu_reports.gif) no-repeat !important
+    background:transparent url(http://47.91.86.81/sites/all/modules/ubercart/uc_store/images/menu_reports.gif) no-repeat !important
 }
 #permissions td.module{
     font-weight:700
@@ -835,7 +835,7 @@ div.password-suggestions ul{
     background:#000
 }
 #colorbox{
-    background:#fff url(http://118.25.5.174:8001/sites/all/modules/colorbox/styles/stockholmsyndrome/images/bg_tab.png) center bottom repeat-x;
+    background:#fff url(http://47.91.86.81/sites/all/modules/colorbox/styles/stockholmsyndrome/images/bg_tab.png) center bottom repeat-x;
     -moz-box-shadow:3px 3px 16px #333;
     -webkit-box-shadow:3px 3px 16px #333;
     box-shadow:3px 3px 16px #333;
@@ -922,7 +922,7 @@ div.password-suggestions ul{
     position:absolute;
     bottom:-26px;
     right:45px;
-    background:url(http://118.25.5.174:8001/sites/all/modules/colorbox/styles/stockholmsyndrome/images/controls.png) no-repeat 0 -48px;
+    background:url(http://47.91.86.81/sites/all/modules/colorbox/styles/stockholmsyndrome/images/controls.png) no-repeat 0 -48px;
     width:21px;
     height:15px;
     text-indent:-9999px
@@ -934,7 +934,7 @@ div.password-suggestions ul{
     position:absolute;
     bottom:-26px;
     right:15px;
-    background:url(http://118.25.5.174:8001/sites/all/modules/colorbox/styles/stockholmsyndrome/images/controls.png) no-repeat 0 -29px;
+    background:url(http://47.91.86.81/sites/all/modules/colorbox/styles/stockholmsyndrome/images/controls.png) no-repeat 0 -29px;
     width:21px;
     height:15px;
     text-indent:-9999px
@@ -946,13 +946,13 @@ div.password-suggestions ul{
     background:#e6e6e6
 }
 #cboxLoadingGraphic{
-    background:url(http://118.25.5.174:8001/sites/all/modules/colorbox/styles/stockholmsyndrome/images/loading_animation.gif) no-repeat center center
+    background:url(http://47.91.86.81/sites/all/modules/colorbox/styles/stockholmsyndrome/images/loading_animation.gif) no-repeat center center
 }
 #cboxClose{
     position:absolute;
     top:-10px;
     right:-10px;
-    background:url(http://118.25.5.174:8001/sites/all/modules/colorbox/styles/stockholmsyndrome/images/controls.png) no-repeat 0px 0px;
+    background:url(http://47.91.86.81/sites/all/modules/colorbox/styles/stockholmsyndrome/images/controls.png) no-repeat 0px 0px;
     width:25px;
     height:25px;
     text-indent:-9999px;
@@ -973,15 +973,15 @@ div.password-suggestions ul{
 }
 a.ctools-ajaxing,input.ctools-ajaxing,button.ctools-ajaxing,select.ctools-ajaxing{
     padding-right:18px !important;
-    background:url(http://118.25.5.174:8001/sites/all/modules/ctools/images/status-active.gif) right center no-repeat
+    background:url(http://47.91.86.81/sites/all/modules/ctools/images/status-active.gif) right center no-repeat
 }
 div.ctools-ajaxing{
     float:left;
     width:18px;
-    background:url(http://118.25.5.174:8001/sites/all/modules/ctools/images/status-active.gif) center center no-repeat
+    background:url(http://47.91.86.81/sites/all/modules/ctools/images/status-active.gif) center center no-repeat
 }
 div.selector,div.selector span,div.checker span,div.radio span,div.uploader,div.uploader span.action,div.button,div.button span{
-    background-image:url(http://118.25.5.174:8001/sites/all/libraries/uniform/images/sprite-aristo.png);
+    background-image:url(http://47.91.86.81/sites/all/libraries/uniform/images/sprite-aristo.png);
     background-repeat:no-repeat;
     -webkit-font-smoothing:antialiased
 }
@@ -1000,17 +1000,17 @@ div.selector,div.selector *,div.radio,div.radio *,div.checker,div.checker *,div.
     padding:0
 }
 .highContrastDetect{
-    background:url(http://118.25.5.174:8001/sites/all/libraries/uniform/images/bg-input-aristo.png) repeat-x 0 0;
+    background:url(http://47.91.86.81/sites/all/libraries/uniform/images/bg-input-aristo.png) repeat-x 0 0;
     width:0;
     height:0
 }
 input.uniform-input,select.uniform-multiselect,textarea.uniform{
     padding:4px;
-    background:url(http://118.25.5.174:8001/sites/all/libraries/uniform/images/bg-input-aristo.png) repeat-x 0 0;
+    background:url(http://47.91.86.81/sites/all/libraries/uniform/images/bg-input-aristo.png) repeat-x 0 0;
     outline:0
 }
 input.uniform-input.active,select.uniform-multiselect.active,textarea.uniform.active{
-    background:url(http://118.25.5.174:8001/sites/all/libraries/uniform/images/bg-input-focus-aristo.png) repeat-x 0 0
+    background:url(http://47.91.86.81/sites/all/libraries/uniform/images/bg-input-focus-aristo.png) repeat-x 0 0
 }
 div.checker input,input[type=search],input[type=search]:active{
     -moz-appearance:none;
@@ -1933,13 +1933,13 @@ input.text,input.email,input.password,textarea.uniform,input.text:focus,input.em
     *margin-right:.3em;
     line-height:14px;
     vertical-align:text-top;
-    background-image:url(http://118.25.5.174:8001/sites/all/modules/tb_megamenu/img/glyphicons-halflings.png);
+    background-image:url(http://47.91.86.81/sites/all/modules/tb_megamenu/img/glyphicons-halflings.png);
     background-position:14px 14px;
     background-repeat:no-repeat;
     margin-top:1px
 }
 .tb-megamenu .icon-white,.tb-megamenu .nav-pills>.active>a>[class^=icon-],.tb-megamenu .nav-pills>.active>a>[class*=" icon-"],.tb-megamenu .nav-list>.active>a>[class^=icon-],.tb-megamenu .nav-list>.active>a>[class*=" icon-"],.tb-megamenu .navbar-inverse .nav>.active>a>[class^=icon-],.tb-megamenu .navbar-inverse .nav>.active>a>[class*=" icon-"],.tb-megamenu .dropdown-menu>li>a:hover>[class^=icon-],.tb-megamenu .dropdown-menu>li>a:focus>[class^=icon-],.tb-megamenu .dropdown-menu>li>a:hover>[class*=" icon-"],.tb-megamenu .dropdown-menu>li>a:focus>[class*=" icon-"],.tb-megamenu .dropdown-menu>.active>a>[class^=icon-],.tb-megamenu .dropdown-menu>.active>a>[class*=" icon-"],.tb-megamenu .dropdown-submenu:hover>a>[class^=icon-],.tb-megamenu .dropdown-submenu:focus>a>[class^=icon-],.tb-megamenu .dropdown-submenu:hover>a>[class*=" icon-"],.tb-megamenu .dropdown-submenu:focus>a>[class*=" icon-"]{
-    background-image:url(http://118.25.5.174:8001/sites/all/modules/tb_megamenu/img/glyphicons-halflings-white.png)
+    background-image:url(http://47.91.86.81/sites/all/modules/tb_megamenu/img/glyphicons-halflings-white.png)
 }
 .tb-megamenu .icon-glass{
     background-position:0 0

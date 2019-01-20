@@ -1,4 +1,4 @@
-/* Source and licensing information for the line(s) below can be found at http://118.25.5.174:8001/sites/all/libraries/uniform/jquery.uniform.js. */
+/* Source and licensing information for the line(s) below can be found at http://47.91.86.81/sites/all/libraries/uniform/jquery.uniform.js. */
 (function(wind,$,undef){"use strict";function attrOrProp($el){var args=Array.prototype.slice.call(arguments,1);if($el.prop){return $el.prop.apply($el,args);}
 return $el.attr.apply($el,args);}
 function bindMany($el,options,events){var name,namespaced;for(name in events){if(events.hasOwnProperty(name)){namespaced=name.replace(/ |$/g,options.eventNamespace);$el.bind(namespaced,events[name]);}}}
@@ -63,10 +63,10 @@ elementData.remove();index=$.inArray(this,$.uniform.elements);if(index>=0){$.uni
 $el.removeData("uniformed");});};$.uniform.update=$.fn.uniform.update=function(elem){if(elem===undef){elem=$.uniform.elements;}
 $(elem).each(function(){var $el=$(this),elementData;elementData=$el.data("uniformed");if(!elementData){return;}
 elementData.update($el,elementData.options);});};}(this,jQuery));;;
-/* Source and licensing information for the above line(s) can be found at http://118.25.5.174:8001/sites/all/libraries/uniform/jquery.uniform.js. */
+/* Source and licensing information for the above line(s) can be found at http://47.91.86.81/sites/all/libraries/uniform/jquery.uniform.js. */
 ;/*})'"*/
-/* Source and licensing information for the line(s) below can be found at http://118.25.5.174:8001/sites/all/modules/uniform/uniform.js. */
+/* Source and licensing information for the line(s) below can be found at http://47.91.86.81/sites/all/modules/uniform/uniform.js. */
 Drupal.behaviors.uniform={attach:function(context,settings){if(settings.uniform!=undefined){if(settings.uniform['selectors']){if(settings.uniform['not']){jQuery(settings.uniform['selectors'].join(':not(.uniform-processed), '),context).not(settings.uniform['not']).addClass('uniform-processed').uniform();}
 else{jQuery(settings.uniform['selectors'].join(':not(.uniform-processed), '),context).addClass('uniform-processed').uniform();}}}}};;
-/* Source and licensing information for the above line(s) can be found at http://118.25.5.174:8001/sites/all/modules/uniform/uniform.js. */
+/* Source and licensing information for the above line(s) can be found at http://47.91.86.81/sites/all/modules/uniform/uniform.js. */
 ;/*})'"*/
