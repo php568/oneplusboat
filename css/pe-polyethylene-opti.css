@@ -78,3 +78,7 @@ body {
 .layui-fluid {padding: 0px;}
 .layui-fluid .layui-row{background-color: #fff;}
 .layui-col-sm2 .grid-info{ display: inline-block; width: 100%; color: black; text-align: center;}
+@media (max-width:979px) {
+    .tb-megamenu {background-color: rgba(0,0,0,0);}
+    #block-tb-megamenu-main-menu{top:0em;}
+}

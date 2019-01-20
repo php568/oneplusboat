@@ -91,3 +91,7 @@ body{
 .views-column .views-field .intro h3 {
     line-height: 1em; margin: 0; font-weight: bold;
 }
+@media (max-width:979px) {
+    .tb-megamenu {background-color: rgba(0,0,0,0);}
+    #block-tb-megamenu-main-menu{top:0em;}
+}

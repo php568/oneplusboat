@@ -75,3 +75,7 @@ body {
     height: 72px !important;
 }
 .layui-carousel-ind ul{ background-color: rgba(0,0,0,0); border-radius: 0px;}
+@media (max-width:979px) {
+    .tb-megamenu {background-color: rgba(0,0,0,0);}
+    #block-tb-megamenu-main-menu{top:0em;}
+}
