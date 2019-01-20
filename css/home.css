@@ -107,7 +107,7 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
     #block-tb-megamenu-main-menu{top:0em;}
     #content{width:100%;}
     .front #page{min-height: 1560px;}
-    .front .sidebars .sidebar{position: absolute !important;top: 1024px !important;}
+    .front .sidebars .sidebar{position: absolute !important;top: 840px !important;}
     .front .region-bottom{height: 300px;}
     .view-homepage {height: auto;}
     #block-block-1{height:170px;}

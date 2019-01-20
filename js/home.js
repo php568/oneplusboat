@@ -100,7 +100,7 @@
     var ins = carousel.render({
         elem: '#flexslider-2',
         width: '100%', //设置容器宽度
-        // height: '426px',
+        height: '426px',
         anim: 'fade' //切换动画方式
     });
     $('.layui-carousel-arrow').html('');
@@ -112,12 +112,5 @@
     $('.tb-megamenu ul.nav li.mega').mouseleave(function(){
         $(this).removeClass('open');
     });
-    $('.tb-megamenu-button').click(function() {
-        if(parseInt($(this).parent().children('.nav-collapse').height())) {
-            $(this).parent().children('.nav-collapse').css({height: 0, overflow: 'hidden'});
-        }
-        else {
-            $(this).parent().children('.nav-collapse').css({height: 'auto', overflow: 'visible'});
-        }
-    });
+
 })();
