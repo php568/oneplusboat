@@ -80,4 +80,5 @@ body {
     .tb-megamenu {background-color: rgba(0,0,0,0);}
     #block-tb-megamenu-main-menu{top:0em;}
     #content{width:100%;}
+    .front img {width: 100%;}
 }
