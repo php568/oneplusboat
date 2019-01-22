@@ -100,7 +100,7 @@
     var ins = carousel.render({
         elem: '#flexslider-2',
         width: '100%', //设置容器宽度
-        full: 1,
+        height: '426px',
         anim: 'fade' //切换动画方式
     });
     $('.layui-carousel-arrow').html('');
@@ -112,4 +112,5 @@
     $('.tb-megamenu ul.nav li.mega').mouseleave(function(){
         $(this).removeClass('open');
     });
+    
 })();
