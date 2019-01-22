@@ -15,8 +15,8 @@
         anim: 'fade' //切换动画方式
     });
     $('.layui-carousel-arrow').html('');
-    $('.front #content').delay(600).animate({'top': '40px'}, 1200);
-    $('.front .sidebars .sidebar').delay(600).animate({'top': '43px'}, 1200);
+    // $('.front #content').delay(600).animate({'top': '40px'}, 1200);
+    // $('.front .sidebars .sidebar').delay(600).animate({'top': '43px'}, 1200);
     $('.tb-megamenu ul.nav li.mega').mouseenter(function(){
         $(this).addClass('open');
     });
@@ -31,4 +31,12 @@
             $(this).parent().children('.nav-collapse').css({height: 'auto', overflow: 'visible'});
         }
     });
+
+    if($(window).width() <=375){
+        $('#flexslider-2').height('226px');
+    }else if(376< $(window).width() && $(window).width() <=414){
+        $('#flexslider-2').height('251px');
+    }else{
+        $('#flexslider-2').height('426px');
+    }
 })();

@@ -109,6 +109,7 @@ body{
     #content{width:100%;}
     #block-views-blog-posts-block img {width: 100%;}
     .view-taxonomy-images .views-column{width: auto;height: 290px;}
+    .views-column .views-field{padding: 10px 5px 5px 10px;}
 }
 @media screen and (min-width:415px) and (max-width:639px){
     .tb-megamenu {background-color: rgba(0,0,0,0);}
