@@ -112,6 +112,14 @@
     $('.tb-megamenu ul.nav li.mega').mouseleave(function(){
         $(this).removeClass('open');
     });
+    $('.tb-megamenu-button').click(function() {
+        if(parseInt($(this).parent().children('.nav-collapse').height())) {
+            $(this).parent().children('.nav-collapse').css({height: 0, overflow: 'hidden'});
+        }
+        else {
+            $(this).parent().children('.nav-collapse').css({height: 'auto', overflow: 'visible'});
+        }
+    });
 
     if($(window).width() <=375){
         $('#flexslider-2').height('226px');
@@ -120,4 +128,5 @@
     }else{
         $('#flexslider-2').height('426px');
     }
+
 })();
