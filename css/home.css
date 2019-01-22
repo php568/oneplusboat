@@ -119,6 +119,9 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
     #flexslider-2{height:226px; margin:10px 0 10px;}
     #block-bean-boat-repair .field-item{margin-left: 1px;max-width: 175px;}
     #index-video{width: 100%;min-height:230px;}
+    #intro-1 .but_left,#intro-1 .but_right{width:15px;height:auto;bottom: 20px;}
+    #intro-1 li.layui-col-md4{width: 138px; float: left;}
+    #video-view{height: auto;}
 }
 @media screen and (min-width:376px) and (max-width:414px){
     .tb-megamenu {background-color: rgba(0,0,0,0);}
