@@ -113,7 +113,11 @@
         $(this).removeClass('open');
     });
 
-    if($(window).width() <=979){
+    if($(window).width() <=375){
+        $('#flexslider-2').height('226px');
+    }else if(376< $(window).width() && $(window).width() <=414){
         $('#flexslider-2').height('251px');
+    }else{
+        $('#flexslider-2').height('426px');
     }
 })();
