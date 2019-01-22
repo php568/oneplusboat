@@ -96,8 +96,8 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
 
 @media screen and (min-width:321px) and (max-width:375px){
     .tb-megamenu {background-color: rgba(0,0,0,0);}
-    .front #page{min-height: 4272px;}
-    .front .sidebars .sidebar{position: absolute !important;top: 3460px !important;}
+    .front #page{min-height: 4140px;}
+    .front .sidebars .sidebar{position: absolute !important;top: 3360px !important;}
     .front .region-bottom{height: 340px;}
     .view-homepage {height: auto;}
     #block-tb-megamenu-main-menu{top:0em;}
