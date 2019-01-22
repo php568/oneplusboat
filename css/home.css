@@ -107,11 +107,12 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
     #block-tb-megamenu-main-menu{top:0em;}
     #content{width:100%;}
     #block-views-blog-posts-block img {width: 100%;}
-    .front #page{min-height: 1560px;}
-    .front .sidebars .sidebar{position: absolute !important;top: 840px !important;}
-    .front .region-bottom{height: 300px;}
+    .front #page{min-height: 1280px;}
+    .front .sidebars .sidebar{position: absolute !important;top: 645px !important;}
+    .front .region-bottom{height: 340px;}
     .view-homepage {height: auto;}
     #block-block-1{height:170px;}
-    #flexslider-2{height:226px;}
-    #block-bean-boat-repair .field-item{max-width: 175px;}
+    #flexslider-2{height:226px; margin:10px 0 10px;}
+    #block-bean-boat-repair .field-item{margin-left: 4px;max-width: 190px;}
+    #index-video{min-height:230px;}
 }
