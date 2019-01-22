@@ -112,5 +112,8 @@
     $('.tb-megamenu ul.nav li.mega').mouseleave(function(){
         $(this).removeClass('open');
     });
-    
+
+    if($(window).width() <=979){
+        $('#flexslider-2').height('251px');
+    }
 })();
