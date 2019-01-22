@@ -100,12 +100,11 @@
     var ins = carousel.render({
         elem: '#flexslider-2',
         width: '100%', //设置容器宽度
-        height: '426px',
         anim: 'fade' //切换动画方式
     });
     $('.layui-carousel-arrow').html('');
-    $('.front #content').delay(600).animate({'top': '40px'}, 1200);
-    $('.front .sidebars .sidebar').delay(600).animate({'top': '43px'}, 1200);
+    // $('.front #content').delay(600).animate({'top': '40px'}, 1200);
+    // $('.front .sidebars .sidebar').delay(600).animate({'top': '43px'}, 1200);
     $('.tb-megamenu ul.nav li.mega').mouseenter(function(){
         $(this).addClass('open');
     });

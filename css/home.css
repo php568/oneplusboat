@@ -102,6 +102,10 @@ li.layui-col-md4 a{outline-style:none; -moz-outline-style: none;}
 li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
 #intro-1 .but_left{opacity: 0;width: 22px;height: 72px;position: absolute;bottom: 30px;left: 0px;display: inline-block;-webkit-transition-duration: .3s; transition-duration: .3s;cursor: pointer;}
 #intro-1 .but_right{opacity: 0;width: 22px; height: 72px;position: absolute;bottom: 30px;right: 0px;display: inline-block;-webkit-transition-duration: .3s; transition-duration: .3s;cursor: pointer;}
+#flexslider-2{height:426px; margin:10px 0 10px;}
+.front #content{top:40px;}
+.front .sidebars .sidebar{top:43px;}
+
 @media (max-width:979px) {
     .tb-megamenu {background-color: rgba(0,0,0,0);}
     #block-tb-megamenu-main-menu{top:0em;}
@@ -114,5 +118,5 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
     #block-block-1{height:170px;}
     #flexslider-2{height:226px; margin:10px 0 10px;}
     #block-bean-boat-repair .field-item{margin-left: 4px;max-width: 190px;}
-    #index-video{min-height:230px;}
+    #index-video{width: 100%;min-height:230px;}
 }
