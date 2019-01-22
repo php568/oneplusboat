@@ -112,7 +112,7 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
     #content{width:100%;}
     #block-views-blog-posts-block img {width: 100%;}
     .front #page{min-height: 1280px;}
-    .front .sidebars .sidebar{position: absolute !important;top: 645px !important;}
+    .front .sidebars .sidebar{position: absolute !important;top: 700px !important;}
     .front .region-bottom{height: 340px;}
     .view-homepage {height: auto;}
     #block-block-1{height:170px;}

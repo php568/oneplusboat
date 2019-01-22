@@ -16,6 +16,7 @@
 
     var player = videojs("index-video", {
         "width":"100%",
+        "full":1,
         "poster":"",
         "autoplay":true,
         "controls":true,
@@ -111,5 +112,4 @@
     $('.tb-megamenu ul.nav li.mega').mouseleave(function(){
         $(this).removeClass('open');
     });
-
 })();
