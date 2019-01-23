@@ -100,7 +100,7 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
 @media screen and (min-width:321px) and (max-width:375px){
     .tb-megamenu {background-color: rgba(0,0,0,0);}
     .front #page{min-height: 2600px;}
-    .front .sidebars .sidebar{position: absolute !important;top: 1810px !important;}
+    .front .sidebars .sidebar{position: absolute !important;top: 1820px !important;}
     .front .region-bottom{height: 230px;}
     .view-homepage {height: auto;}
     #block-tb-megamenu-main-menu{top:0em;}
