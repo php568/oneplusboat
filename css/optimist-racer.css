@@ -86,6 +86,7 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
 #flexslider-2{height:426px;}
 .front #content{top:40px;}
 .front .sidebars .sidebar{top:43px;}
+.front .view-homepage {background-color: rgba(0,0,0,0);}
 
 @media (max-width:979px) {
     .tb-megamenu {background-color: rgba(0,0,0,0);}
