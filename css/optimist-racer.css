@@ -96,8 +96,8 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
 
 @media screen and (min-width:321px) and (max-width:375px){
     .tb-megamenu {background-color: rgba(0,0,0,0);}
-    .front #page{min-height: 1770px;}
-    .front .sidebars .sidebar{position: absolute !important;top: 1010px !important;}
+    .front #page{min-height: 2060px;}
+    .front .sidebars .sidebar{position: absolute !important;top: 1290px !important;}
     .front .region-bottom{height: 220px;}
     .view-homepage {height: auto;}
     #block-tb-megamenu-main-menu{top:0em;}
@@ -116,8 +116,8 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
 }
 @media screen and (min-width:376px) and (max-width:414px){
     .tb-megamenu {background-color: rgba(0,0,0,0);}
-    .front #page{min-height: 1810px;}
-    .front .sidebars .sidebar{position: absolute !important;top: 1010px !important;}
+    .front #page{min-height: 2000px;}
+    .front .sidebars .sidebar{position: absolute !important;top: 1190px !important;}
     .front .region-bottom{height: 275px;}
     .view-homepage {height: auto;}
     #block-tb-megamenu-main-menu{top:0em;}
