@@ -187,7 +187,7 @@
                 </div>
                 <div class="form-item webform-component webform-component-email webform-container-inline" id="webform-component-email">
                   <label for="edit-submitted-email">邮箱 <span class="form-required" title="This field is required.">*</span></label>
-                  <input class="email form-text form-email" type="email" id="edit-submitted-email" name="submitted[email]" size="60" required lay-verify="required" />
+                  <input class="email form-text form-email" type="email" id="edit-submitted-email" name="submitted[email]" size="60" required lay-verify="email" />
                 </div>
                 <div class="form-item webform-component webform-component-textfield webform-container-inline" id="webform-component-telephone">
                   <label for="edit-submitted-telephone">电话 <span class="form-required" title="This field is required.">*</span></label>
@@ -203,13 +203,6 @@
                     <textarea id="edit-submitted-message" name="submitted[message]" cols="60" rows="5" class="form-textarea" required lay-verify="required" ></textarea>
                   </div>
                 </div>
-                <input type="hidden" name="details[sid]" />
-                <input type="hidden" name="details[page_num]" value="1" />
-                <input type="hidden" name="details[page_count]" value="1" />
-                <input type="hidden" name="details[finished]" value="0" />
-                <input type="hidden" name="form_build_id" value="form-9_c3qZYCStZpuH1rJEFNcW1_lIE-4tVLu_ivBMWy1bU" />
-                <input type="hidden" name="form_id" value="webform_client_form_2691" />
-                <input type="hidden" name="honeypot_time" value="1543926843|gYg5QgbKKi2c06SRcA9TB_BYrLIJxuzd5b3DjlQic08" />
                 <div class="layui-form-item form-actions form-wrapper" id="edit-actions">
                   <input type="submit" id="edit-submit" name="op" value="提交" class="form-submit" lay-submit lay-filter="edit-submit" />
                 </div>
