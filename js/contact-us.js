@@ -1,5 +1,5 @@
 (function(){
-    var $ = layui.jquery;
+    var $ = layui.jquery, form = layui.form, layer = layui.layer;
 
     $('.tb-megamenu ul.nav li.mega').mouseenter(function(){
         $(this).addClass('open');
@@ -14,5 +14,11 @@
         else {
             $(this).parent().children('.nav-collapse').css({height: 'auto', overflow: 'visible'});
         }
+    });
+
+    //监听提交
+    form.on('submit(edit-submit)', function(data){
+        layer.msg(JSON.stringify(data.field));
+        return false;
     });
 })();
