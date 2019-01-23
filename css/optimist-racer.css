@@ -96,12 +96,12 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
 
 @media screen and (min-width:321px) and (max-width:375px){
     .tb-megamenu {background-color: rgba(0,0,0,0);}
-    .front #page{min-height: 4140px;}
-    .front .sidebars .sidebar{position: absolute !important;top: 3360px !important;}
-    .front .region-bottom{height: 340px;}
+    .front #page{min-height: 1770px;}
+    .front .sidebars .sidebar{position: absolute !important;top: 1010px !important;}
+    .front .region-bottom{height: 220px;}
     .view-homepage {height: auto;}
     #block-tb-megamenu-main-menu{top:0em;}
-    #content{width:100%;}
+    #content{width:100%;margin-bottom: 0px;}
     #block-views-blog-posts-block img {width: 100%;}
     #block-block-1{height:170px;}
     #flexslider-2{height:226px; margin:10px 0 10px;}
@@ -111,15 +111,17 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
     #intro-1 li.layui-col-md4{width: 125px; float: left;}
     #video-view{height: auto;}
     #block-views-table-block{margin-top:0px;}
+    #block-views-homepage-products-block .views-column{width:117px;float: left;margin: 0 2px 4px 2px;padding-bottom:0px;}
+    .block {margin-bottom: 10px;}
 }
 @media screen and (min-width:376px) and (max-width:414px){
     .tb-megamenu {background-color: rgba(0,0,0,0);}
-    .front #page{min-height: 4272px;}
-    .front .sidebars .sidebar{position: absolute !important;top: 3460px !important;}
-    .front .region-bottom{height: 340px;}
+    .front #page{min-height: 1810px;}
+    .front .sidebars .sidebar{position: absolute !important;top: 1010px !important;}
+    .front .region-bottom{height: 275px;}
     .view-homepage {height: auto;}
     #block-tb-megamenu-main-menu{top:0em;}
-    #content{width:100%;}
+    #content{width:100%;margin-bottom: 0px;}
     #block-views-blog-posts-block img {width: 100%;}
     #block-block-1{height:170px;}
     #flexslider-2{height:251px; margin:10px 0 10px;}
@@ -129,6 +131,8 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
     #intro-1 li.layui-col-md4{width: 138px; float: left;}
     #video-view{height: auto;}
     #block-views-table-block{margin-top:0px;}
+    #block-views-homepage-products-block .views-column{width:130px;float: left;margin: 0 2px 4px 2px;padding-bottom:0px;}
+    .block {margin-bottom: 10px;}
 }
 @media screen and (min-width:415px) and (max-width:639px){
     .tb-megamenu {background-color: rgba(0,0,0,0);}
