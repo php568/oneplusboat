@@ -1,5 +1,5 @@
 (function(){
-    var $ = layui.jquery, form = layui.form, layer = layui.layer;
+    var $ = layui.jquery, form = layui.form, layer = layui.layer, view = layui.view;
 
     $('.tb-megamenu ul.nav li.mega').mouseenter(function(){
         $(this).addClass('open');
@@ -26,15 +26,31 @@
     form.on('submit(edit-submit)', function(data){
         layer.msg(JSON.stringify(data.field));
 
-        $.ajax({
-            type: "POST",
-            url: "/form.php",
-            data: JSON.parse(data.field),
-            dataType: "json",
-            success: function(data){
-                console.log(data.field);
+        var field = data.field;
+        //请求接口
+        view.req({
+            url: '/form.php' //实际使用请改成服务端真实接口
+            ,data: field
+            ,done: function(res){
+                layer.msg('Success', {
+                    offset: '15px'
+                    ,icon: 1
+                    ,time: 1000
+                }, function(){
+                    // location.hash = '/user/login'; //跳转到登入页
+                });
             }
         });
+
+        // $.ajax({
+        //     type: "POST",
+        //     url: "/form.php",
+        //     data: JSON.parse(data.field),
+        //     dataType: "json",
+        //     success: function(data){
+        //         console.log(data.field);
+        //     }
+        // });
         return false;
     });
 })();
