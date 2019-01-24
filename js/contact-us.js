@@ -23,34 +23,54 @@
     $('.tb-megamenu .nav-collapse').toggleClass('open');
 
     //监听提交
-    form.on('submit(edit-submit)', function(data){
-        layer.msg(JSON.stringify(data.field));
+    // form.on('submit(edit-submit)', function(data){
+    //     layer.msg(JSON.stringify(data.field));
+    //
+    //     var field = data.field;
+    //
+    //     //请求接口
+    //     // view.req({
+    //     //     url: '/form.php' //实际使用请改成服务端真实接口
+    //     //     ,data: field
+    //     //     ,done: function(res){
+    //     //         layer.msg('Success', {
+    //     //             offset: '15px'
+    //     //             ,icon: 1
+    //     //             ,time: 1000
+    //     //         }, function(){
+    //     //             // location.hash = '/user/login'; //跳转到登入页
+    //     //         });
+    //     //     }
+    //     // });
+    //
+    //     $.ajax({
+    //         type: "POST",
+    //         url: "/form.php",
+    //         data: field,
+    //         dataType: "json",
+    //         success: function(data){
+    //             console.log(data.field);
+    //         }
+    //     });
+    //     return false;
+    // });
 
-        var field = data.field;
-        //请求接口
-        view.req({
-            url: '/form.php' //实际使用请改成服务端真实接口
-            ,data: field
-            ,done: function(res){
+    $( "#edit-submit" ).click(function() {
+        var field = $('#webform-client-form-2691').serialize();
+        $.ajax({
+            type: "POST",
+            url: "/form.php",
+            data: field,
+            dataType: "json",
+            success: function(data){
                 layer.msg('Success', {
                     offset: '15px'
                     ,icon: 1
                     ,time: 1000
-                }, function(){
+                }, function() {
                     // location.hash = '/user/login'; //跳转到登入页
                 });
             }
         });
-
-        // $.ajax({
-        //     type: "POST",
-        //     url: "/form.php",
-        //     data: JSON.parse(data.field),
-        //     dataType: "json",
-        //     success: function(data){
-        //         console.log(data.field);
-        //     }
-        // });
-        return false;
     });
 })();
