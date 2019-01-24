@@ -23,7 +23,7 @@
         $.ajax({
             type: "POST",
             url: "/form.php",
-            data: data.field,
+            data: JSON.parse(data.field),
             dataType: "json",
             success: function(data){
                 console.log(data.field);
