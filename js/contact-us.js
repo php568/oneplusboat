@@ -10,13 +10,13 @@
     $('.tb-megamenu-button').click(function() {
         if(parseInt($(this).parent().children('.nav-collapse').height())) {
             // $(this).parent().children('.nav-collapse').css({height: 0, overflow: 'hidden'});
-            $('.tb-megamenu .nav-collapse').removeClass('close');
-            $('.tb-megamenu .nav-collapse').addClass('open');
+            $(this).parent().children('.nav-collapse').removeClass('close');
+            $(this).parent().children('.nav-collapse').addClass('open');
         }
         else {
             // $(this).parent().children('.nav-collapse').css({height: 'auto', overflow: 'visible'});
-            $('.tb-megamenu .nav-collapse').removeClass('open');
-            $('.tb-megamenu .nav-collapse').addClass('close');
+            $(this).parent().children('.nav-collapse').removeClass('open');
+            $(this).parent().children('.nav-collapse').addClass('close');
         }
     });
     $('.tb-megamenu .nav-collapse').toggleClass('open');

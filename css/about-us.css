@@ -41,6 +41,8 @@ body{
 .tb-megamenu .tb-megamenu-item .tb-megamenu-column{width:100%;}
 .tb-megamenu .tb-megamenu-item .row-fluid .span1{width:100%;}
 #block-block-1{margin: 10px auto;color:#fff;}
+.tb-megamenu .nav-collapse{height: 0px; overflow: hidden;}
+
 @media (max-width:979px) {
     .tb-megamenu {background-color: rgba(0,0,0,0);}
     #block-tb-megamenu-main-menu{top:0em;}

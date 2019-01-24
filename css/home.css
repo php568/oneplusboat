@@ -105,6 +105,7 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
 #flexslider-2{height:426px;}
 .front #content{top:40px;}
 .front .sidebars .sidebar{top:43px;}
+.tb-megamenu .nav-collapse{height: 0px; overflow: hidden;}
 
 @media screen and (min-width:321px) and (max-width:375px){
     .tb-megamenu {background-color: rgba(0,0,0,0);}

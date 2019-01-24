@@ -67,6 +67,8 @@ body {
 #block-bean-boat-charter .block-title{background-color: #818286; padding: 0 0 0 15px;}
 #block-bean-boat-charter .field-item img{ width:100%; height:100%; }
 .node-blog .field-items .field-item p{margin:0;}
+.tb-megamenu .nav-collapse{height: 0px; overflow: hidden;}
+
 @media (max-width:979px) {
     .tb-megamenu {background-color: rgba(0,0,0,0);}
     #block-tb-megamenu-main-menu{top:0em;}

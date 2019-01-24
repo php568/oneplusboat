@@ -89,6 +89,8 @@ li.layui-col-md4 a:focus{outline-style:none; -moz-outline-style: none;}
 .front #content{top:40px;}
 .front .sidebars .sidebar{top:43px;}
 .front .view-homepage {background-color: rgba(0,0,0,0);}
+.tb-megamenu .nav-collapse{height: 0px; overflow: hidden;}
+
 
 @media (max-width:979px) {
     .tb-megamenu {background-color: rgba(0,0,0,0);}
