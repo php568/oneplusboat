@@ -61,7 +61,7 @@ body {
 #block-block-11 .block-title{background-color: #818286; padding: 0 0 0 15px;}
 #block-bean-boat-repair{ padding:0px 0 0; }
 #block-bean-boat-repair .block-title{background-color: #818286; padding: 0 0 0 15px;}
-.view-id-taxonomy_images .views-field-name{ padding-top: 10px; padding-bottom: 30px;margin-top:0px;}
+.view-id-taxonomy_images .views-field-name{ padding-top: 10px; padding-bottom: 10px;height: 35px;margin-top:0px;}
 /*.view-taxonomy-images .views-column{ width:50%; height: 230px; margin-right:0; margin-bottom:0; }*/
 .tb-megamenu .nav-collapse{height: 0px; overflow: hidden;}
 
