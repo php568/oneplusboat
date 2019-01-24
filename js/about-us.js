@@ -16,5 +16,5 @@
         }
     });
 
-    $('.tb-megamenu .nav-collapse').toggleClass('open');
+    $('.tb-megamenu .nav-collapse').stop(true,false).delay(200).animate({height: 'auto', overflow: 'visible'}).delay(2000).animate({height: 0, overflow: 'hidden'});
 })();
