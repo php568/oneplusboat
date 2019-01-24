@@ -20,4 +20,5 @@
             $(this).parent().children('.nav-collapse').css({height: 'auto', overflow: 'visible'});
         }
     });
+    $('.tb-megamenu .nav-collapse').toggleClass('open');
 })();

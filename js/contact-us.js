@@ -15,6 +15,7 @@
             $(this).parent().children('.nav-collapse').css({height: 'auto', overflow: 'visible'});
         }
     });
+    $('.tb-megamenu .nav-collapse').toggleClass('open');
 
     //监听提交
     form.on('submit(edit-submit)', function(data){

@@ -31,6 +31,7 @@
             $(this).parent().children('.nav-collapse').css({height: 'auto', overflow: 'visible'});
         }
     });
+    $('.tb-megamenu .nav-collapse').toggleClass('open');
 
     if($(window).width() <=375){
         $('#flexslider-2').height('226px');
