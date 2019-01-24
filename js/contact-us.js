@@ -19,6 +19,16 @@
     //监听提交
     form.on('submit(edit-submit)', function(data){
         layer.msg(JSON.stringify(data.field));
+
+        $.ajax({
+            type: "POST",
+            url: "/form.php",
+            data: data.field,
+            dataType: "json",
+            success: function(data){
+                console.log(data.field);
+            }
+        });
         return false;
     });
 })();
