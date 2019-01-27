@@ -22,7 +22,7 @@
 /* @import "theme-B.css"; */
 body {
     background-color: #FFFFFF;
-    /*background-image: url('http://47.91.86.81/sites/default/files/470EurosD5_mt225-dinghies.jpg');*/
+    /*background-image: url('http://118.25.5.174:8001/sites/default/files/470EurosD5_mt225-dinghies.jpg');*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
@@ -30,8 +30,8 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://47.91.86.81/sites/default/files/470EurosD5_mt225-dinghies.jpg',sizingMethod='scale');*/
-    /*-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://47.91.86.81/sites/default/files/470EurosD5_mt225-dinghies.jpg',sizingMethod='scale')";*/
+    /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://118.25.5.174:8001/sites/default/files/470EurosD5_mt225-dinghies.jpg',sizingMethod='scale');*/
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://118.25.5.174:8001/sites/default/files/470EurosD5_mt225-dinghies.jpg',sizingMethod='scale')";*/
 }
 
 table {

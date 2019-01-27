@@ -1,11 +1,11 @@
-/* Source and licensing information for the line(s) below can be found at http://47.91.86.81/misc/jquery.once.js. */
+/* Source and licensing information for the line(s) below can be found at http://118.25.5.174:8001/misc/jquery.once.js. */
 (function($){var cache={},uuid=0;$.fn.once=function(id,fn){if(typeof id!='string'){if(!(id in cache)){cache[id]=++uuid;}
 if(!fn){fn=id;}
 id='jquery-once-'+cache[id];}
 var name=id+'-processed';var elements=this.not('.'+name).addClass(name);return $.isFunction(fn)?elements.each(fn):elements;};$.fn.removeOnce=function(id,fn){var name=id+'-processed';var elements=this.filter('.'+name).removeClass(name);return $.isFunction(fn)?elements.each(fn):elements;};})(jQuery);;;
-/* Source and licensing information for the above line(s) can be found at http://47.91.86.81/misc/jquery.once.js. */
+/* Source and licensing information for the above line(s) can be found at http://118.25.5.174:8001/misc/jquery.once.js. */
 ;/*})'"*/
-/* Source and licensing information for the line(s) below can be found at http://47.91.86.81/misc/drupal.js. */
+/* Source and licensing information for the line(s) below can be found at http://118.25.5.174:8001/misc/drupal.js. */
 var Drupal=Drupal||{'settings':{},'behaviors':{},'locale':{}};jQuery.noConflict();(function($){var jquery_init=$.fn.init;$.fn.init=function(selector,context,rootjQuery){if(selector&&typeof selector==='string'){var hash_position=selector.indexOf('#');if(hash_position>=0){var bracket_position=selector.indexOf('<');if(bracket_position>hash_position){throw'Syntax error, unrecognized expression: '+selector;}}}
 return jquery_init.call(this,selector,context,rootjQuery);};$.fn.init.prototype=jquery_init.prototype;if($.ajaxPrefilter){$.ajaxPrefilter(function(s){if(s.crossDomain){s.contents.script=false;}});}
 else if($.httpData){var jquery_httpData=$.httpData;$.httpData=function(xhr,type,s){if(!type&&!Drupal.urlIsLocal(s.url)){var content_type=xhr.getResponseHeader('content-type')||'';if(content_type.indexOf('javascript')>=0){type='text';}}
@@ -32,12 +32,12 @@ statusCode+="\n"+Drupal.t("Debugging information follows.");pathText="\n"+Drupal
 catch(e){}
 responseText='';try{responseText="\n"+Drupal.t("ResponseText: !responseText",{'!responseText':$.trim(xmlhttp.responseText)});}catch(e){}
 responseText=responseText.replace(/<("[^"]*"|'[^']*'|[^'">])*>/gi,"");responseText=responseText.replace(/[\n]+\s+/g,"\n");readyStateText=xmlhttp.status==0?("\n"+Drupal.t("ReadyState: !readyState",{'!readyState':xmlhttp.readyState})):"";customMessage=customMessage?("\n"+Drupal.t("CustomMessage: !customMessage",{'!customMessage':customMessage})):"";message=statusCode+pathText+statusText+customMessage+responseText+readyStateText;return message;};$('html').addClass('js');document.cookie='has_js=1; path=/';$(function(){if(jQuery.support.positionFixed===undefined){var el=$('<div style="position:fixed; top:10px" />').appendTo(document.body);jQuery.support.positionFixed=el[0].offsetTop===10;el.remove();}});$(function(){Drupal.attachBehaviors(document,Drupal.settings);});Drupal.theme.prototype={placeholder:function(str){return'<em class="placeholder">'+Drupal.checkPlain(str)+'</em>';}};})(jQuery);;;
-/* Source and licensing information for the above line(s) can be found at http://47.91.86.81/misc/drupal.js. */
+/* Source and licensing information for the above line(s) can be found at http://118.25.5.174:8001/misc/drupal.js. */
 ;/*})'"*/
-/* Source and licensing information for the line(s) below can be found at http://47.91.86.81/sites/all/modules/admin_menu/admin_devel/admin_devel.js. */
+/* Source and licensing information for the line(s) below can be found at http://118.25.5.174:8001/sites/all/modules/admin_menu/admin_devel/admin_devel.js. */
 (function($){jQuery.extend({debug:function(){window.debug=window.debug||[];args=jQuery.makeArray(arguments);if(typeof this=='object'){var name=(args.length?args[0]:window.debug.length);var data=this;}
 else{var name=(args.length>1?args.pop():window.debug.length);var data=args[0];}
 window.debug[name]=data;if(typeof console!='undefined'){console.log(name,data);}
 return this;}});jQuery.fn.debug=jQuery.debug;})(jQuery);;;
-/* Source and licensing information for the above line(s) can be found at http://47.91.86.81/sites/all/modules/admin_menu/admin_devel/admin_devel.js. */
+/* Source and licensing information for the above line(s) can be found at http://118.25.5.174:8001/sites/all/modules/admin_menu/admin_devel/admin_devel.js. */
 ;/*})'"*/

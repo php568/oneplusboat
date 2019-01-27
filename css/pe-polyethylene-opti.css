@@ -1,6 +1,6 @@
 body {
     background-color: #FFFFFF !important;
-    background-image: url('http://47.91.86.81/sites/default/files/backgroundimage-pe.jpg') !important;
+    background-image: url('http://118.25.5.174:8001/sites/default/files/backgroundimage-pe.jpg') !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
     background-position: center bottom !important;
@@ -8,8 +8,8 @@ body {
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://47.91.86.81/sites/default/files/backgroundimage-pe.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://47.91.86.81/sites/default/files/backgroundimage-pe.jpg', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://118.25.5.174:8001/sites/default/files/backgroundimage-pe.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://118.25.5.174:8001/sites/default/files/backgroundimage-pe.jpg', sizingMethod='scale')";
 }
 #block-tb-megamenu-main-menu{top:2em;}
 #block-tb-megamenu-main-menu .language{text-align: right;line-height: 2em; height: 2em;}
@@ -65,12 +65,12 @@ body {
 #block-bean-boat-repair .field-item{max-width: 120px;float: left;margin-right: 1px;margin-left: 1px;margin-top: 1px;margin-bottom: 1px;line-height: 0px;}
 
 .layui-carousel-arrow[lay-type=sub]{
-    background: url(http://47.91.86.81/sites/all/themes/racingdinghies/images/left-arrow.png) no-repeat;
+    background: url(http://118.25.5.174:8001/sites/all/themes/racingdinghies/images/left-arrow.png) no-repeat;
     width: 22px !important;
     height: 72px !important;
 }
 .layui-carousel-arrow[lay-type=add]{
-    background: url(http://47.91.86.81/sites/all/themes/racingdinghies/images/right-arrow.png) no-repeat;
+    background: url(http://118.25.5.174:8001/sites/all/themes/racingdinghies/images/right-arrow.png) no-repeat;
     width: 22px !important;
     height: 72px !important;
 }
