@@ -2,9 +2,9 @@
     var $ = layui.jquery, laytpl = layui.laytpl, carousel = layui.carousel;
     var i = 0;
     var video_list = [
-        {title:"视频1", isplay:false, type:"video/mp4", url: "http://47.91.86.81/sites/default/files/video/index-1.mp4", image:"http://47.91.86.81/sites/default/files/video/index-1.jpg", dateTime:"2018-12-25 21:30"},
-        {title:"视频2", isplay:false, type:"video/mp4", url: "http://47.91.86.81/sites/default/files/video/index-2.mp4", image:"http://47.91.86.81/sites/default/files/video/index-2.jpg", dateTime:"2018-12-25 21:30"},
-        {title:"视频3", isplay:false, type:"video/mp4", url: "http://47.91.86.81/sites/default/files/video/index-3.mp4", image:"http://47.91.86.81/sites/default/files/video/index-3.jpg", dateTime:"2018-12-25 21:30"},
+        {title:"视频1", isplay:false, type:"video/mp4", url: "http://www.oneplusboat.com/sites/default/files/video/index-1.mp4", image:"http://www.oneplusboat.com/sites/default/files/video/index-1.jpg", dateTime:"2018-12-25 21:30"},
+        {title:"视频2", isplay:false, type:"video/mp4", url: "http://www.oneplusboat.com/sites/default/files/video/index-2.mp4", image:"http://www.oneplusboat.com/sites/default/files/video/index-2.jpg", dateTime:"2018-12-25 21:30"},
+        {title:"视频3", isplay:false, type:"video/mp4", url: "http://www.oneplusboat.com/sites/default/files/video/index-3.mp4", image:"http://www.oneplusboat.com/sites/default/files/video/index-3.jpg", dateTime:"2018-12-25 21:30"},
     ];
 
     var data = {
